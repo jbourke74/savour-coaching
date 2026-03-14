@@ -14,10 +14,10 @@ import {
 } from "@/components/ui/accordion";
 
 // ─── Image URLs ───────────────────────────────────────────────────────────────
-const IMG_HERO   = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-JPvhuApR6ZprGZX7RzzUxy.webp";
-const IMG_ABOUT  = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-about-HGGsZNasfrcxBPaNcp7rnC.webp";
-const IMG_NOURISH = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-nourish-PFPGUejJB6VHG7Qan6L2Pt.webp";
-const IMG_RETREAT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-retreat-MzWbMf3R7EVHKHtXuktry9.webp";
+const IMG_HERO   = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-v2-aqQ6MX77sfUDg33gAX6jMa.webp";
+const IMG_ABOUT  = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-about-v2-Jz9Y49LNEzDN8CHVdhgXBD.webp";
+const IMG_NOURISH = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-nourish-v2-UASTqgU9vMwAoZHr3v3eap.webp";
+const IMG_CTA    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-cta-v2-KsnawgavbFe2oQ3W8Ht7eM.webp";
 
 // ─── Scroll-reveal hook ───────────────────────────────────────────────────────
 function useReveal() {
@@ -140,7 +140,7 @@ export default function Home() {
               <em>what you're really<br />hungry for.</em>
             </h1>
             <p className="font-body text-base md:text-lg text-[oklch(0.90_0.010_75)] leading-relaxed max-w-lg mb-10 animate-fade-up animate-fade-up-delay-2">
-              A deeply personal coaching partnership for women who are ready to move from managing food to a nourishing, satisfying life that truly fills them up.
+              A deeply personal coaching partnership for women who are ready to move from managing food to a nourishing, satisfying life that truly fills you up.
             </p>
             <div className="animate-fade-up animate-fade-up-delay-3">
               <CTAButton label="Book Your Free Consultation" />
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <Reveal className="lg:col-span-5 order-2 lg:order-1" delay={100}>
               <img
-                src={IMG_RETREAT}
+                src={IMG_CTA}
                 alt="Women gathered around a table"
                 className="w-full object-cover"
                 style={{ aspectRatio: "16/10" }}
