@@ -15,7 +15,7 @@ import {
 
 // ─── Image URLs ───────────────────────────────────────────────────────────────
 const IMG_HERO   = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-v2-aqQ6MX77sfUDg33gAX6jMa.webp";
-const IMG_ABOUT  = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-about-v2-Jz9Y49LNEzDN8CHVdhgXBD.webp";
+const IMG_ABOUT  = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/joanna-headshot_007324b7.png";
 const IMG_NOURISH = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-nourish-v2-UASTqgU9vMwAoZHr3v3eap.webp";
 const IMG_CTA    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-cta-v2-KsnawgavbFe2oQ3W8Ht7eM.webp";
 
