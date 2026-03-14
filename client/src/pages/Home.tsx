@@ -63,7 +63,7 @@ function Rule() {
 function CTAButton({ label = "Book Your Free Consultation", className = "" }: { label?: string; className?: string }) {
   return (
     <a
-      href="#consultation"
+      href="https://tidycal.com/jbourke74/30-minute-discovery-call" target="_blank" rel="noopener noreferrer"
       className={`inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] hover:bg-[oklch(0.26_0.06_135)] transition-colors duration-300 ${className}`}
     >
       {label}
@@ -506,7 +506,7 @@ export default function Home() {
                 It is an investment in your well-being, your peace of mind, and the joyful, energised life that is waiting for you. Payment plans are available.
               </p>
               <a
-                href="mailto:hello@joannabourkelawlor.com"
+                href="https://tidycal.com/jbourke74/30-minute-discovery-call" target="_blank" rel="noopener noreferrer"
                 className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] hover:bg-[oklch(0.80_0.10_75)] transition-colors duration-300"
               >
                 Book Your Free Consultation
