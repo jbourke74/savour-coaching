@@ -527,7 +527,7 @@ export default function Home() {
               A 6-month 1:1 coaching partnership designed to guide you home to yourself.
             </h2>
             <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed max-w-xl mb-16">
-              Two calls per month. Six months. Five pillars. One life that truly nourishes you. This isn't another diet — it's a journey back to yourself, structured around the things that actually fill you up.
+              Eight sessions. Six months. Five pillars. One life that truly nourishes you. This isn't another diet — it's a journey back to yourself, structured around the things that actually fill you up.
             </p>
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[oklch(0.97_0.005_75/0.15)]">
@@ -567,8 +567,8 @@ export default function Home() {
             <Reveal className="lg:col-span-7" delay={100}>
               <div>
                 <IncludedRow
-                  title="12 × 1:1 Coaching Sessions"
-                  description="Two calls per month over six months — consistent, personalised guidance to help you understand your habits, overcome challenges, and integrate lasting change at a pace that suits your life."
+                  title="8 × 1:1 Coaching Sessions"
+                  description="Eight private sessions spread across six months — consistent, personalised guidance to help you understand your habits, overcome challenges, and integrate lasting change at a pace that suits your real life."
                 />
                 <IncludedRow
                   title="A Personalised Savour System"
@@ -747,7 +747,7 @@ export default function Home() {
                 Ready to savour<br /><em>your life?</em>
               </h2>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
-                The Savour Method is a 6-month, high-touch 1:1 coaching experience. Two calls per month, twelve sessions in total, structured around the five Savour Pillars. This investment includes your private sessions, your personalised Nourishment Map, and dedicated support between our calls.
+                The Savour Method is a 6-month, high-touch 1:1 coaching experience. Eight private sessions, structured around the five Savour Pillars, with worksheets to deepen the work between calls and WhatsApp support so you're never navigating the journey alone.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
                 It is an investment in your well-being, your peace of mind, and the joyful, energised life that is waiting for you. Payment plans are available.
@@ -770,7 +770,7 @@ export default function Home() {
                 <p className="font-body text-xs text-[oklch(0.72_0.10_75)] tracking-widest uppercase">The Savour Promise</p>
                 <div className="mt-8 pt-8 border-t border-[oklch(0.97_0.005_75/0.15)]">
                   <p className="font-body text-xs text-[oklch(0.65_0.010_75)] mb-2 uppercase tracking-widest">What's included</p>
-                  {["12 × 1:1 Coaching Sessions", "2 Calls Per Month for 6 Months", "Personalised Nourishment Map", "Food Avatar & Performance Review", "Unlimited Between-Session Support"].map((item, i) => (
+                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Food Avatar & Performance Review", "WhatsApp Support Between Sessions", "Personalised Nourishment Map"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 py-2 border-b border-[oklch(0.97_0.005_75/0.08)] last:border-0">
                       <span className="text-[oklch(0.72_0.10_75)] text-xs">✓</span>
                       <span className="font-body text-sm text-[oklch(0.85_0.010_75)]">{item}</span>
