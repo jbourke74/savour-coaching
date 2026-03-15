@@ -294,6 +294,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── WHY IT HASN'T WORKED BEFORE ── */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <Reveal className="lg:col-span-6">
+              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.32_0.06_135)] mb-6">Why it hasn't worked before</p>
+              <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.12_0.02_65)] leading-[1.15] mb-8">
+                You didn't fail the diet.<br />
+                <em>The diet failed to replace the worker.</em>
+              </h2>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
+                Every time you've tried to eat less, cut back, or be more disciplined, you were essentially trying to make food redundant. And for a while, it works. Willpower holds. The rules feel manageable.
+              </p>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
+                But here's what nobody tells you: you made food redundant without hiring a replacement. The stress still came. The boredom still came. The tiredness, the loneliness, the need for comfort — all still came. And food, ever reliable, ever available, stepped straight back in.
+              </p>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
+                This is not a character flaw. It's a staffing problem. You can't downsize a department without a transition plan.
+              </p>
+              <blockquote className="border-l-4 border-[oklch(0.32_0.06_135)] pl-6 py-1">
+                <p className="font-display text-xl italic text-[oklch(0.18_0.01_65)] leading-relaxed">
+                  "Restriction is a redundancy notice with no severance package and no one hired to cover the role."
+                </p>
+              </blockquote>
+            </Reveal>
+
+            <Reveal className="lg:col-span-6" delay={150}>
+              <div className="space-y-4">
+                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.55_0.02_65)] mb-6">The usual approach vs. the Savour approach</p>
+                {[
+                  {
+                    usual: "Cut out the foods you turn to for comfort",
+                    savour: "Understand what comfort you're actually craving — and find it",
+                  },
+                  {
+                    usual: "Use willpower to resist evening snacking",
+                    savour: "Create a wind-down ritual that genuinely relaxes you",
+                  },
+                  {
+                    usual: "Track, restrict, and measure what you eat",
+                    savour: "Learn to read your body's real signals — hunger, fullness, satisfaction",
+                  },
+                  {
+                    usual: "Be more motivated and disciplined",
+                    savour: "Build a life that doesn't constantly need food to cope with it",
+                  },
+                  {
+                    usual: "Follow a plan someone else designed for you",
+                    savour: "Design your own nourishment — one that fits your real life",
+                  },
+                ].map(({ usual, savour }, i) => (
+                  <div key={i} className="grid grid-cols-2 border border-[oklch(0.88_0.010_75)] overflow-hidden">
+                    <div className="p-5 bg-[oklch(0.96_0.005_65)] border-r border-[oklch(0.88_0.010_75)]">
+                      <p className="font-body text-xs text-[oklch(0.55_0.02_65)] uppercase tracking-widest mb-2">Old way</p>
+                      <p className="font-body text-sm text-[oklch(0.40_0.02_65)] leading-relaxed">{usual}</p>
+                    </div>
+                    <div className="p-5 bg-[oklch(0.32_0.06_135/0.06)]">
+                      <p className="font-body text-xs text-[oklch(0.32_0.06_135)] uppercase tracking-widest mb-2">Savour way</p>
+                      <p className="font-body text-sm text-[oklch(0.22_0.04_135)] leading-relaxed font-medium">{savour}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <Rule />
+
       {/* ── FOOD AVATAR / PERFORMANCE REVIEW ── */}
       <section className="py-24 md:py-32 bg-[oklch(0.97_0.015_75)]">
         <div className="container">
