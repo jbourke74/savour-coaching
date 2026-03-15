@@ -231,6 +231,71 @@ export default function Home() {
 
       <Rule />
 
+      {/* ── FOOD WORKING OVERTIME ── */}
+      <section className="py-24 md:py-32 bg-[oklch(0.15_0.03_65)]">
+        <div className="container">
+          <Reveal>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">The real problem</p>
+            <h2 className="font-display text-4xl md:text-5xl text-white leading-[1.15] mb-8 max-w-3xl">
+              Food has been working overtime.<br />
+              <em className="text-[oklch(0.72_0.10_75)]">And it's exhausted. And so are you.</em>
+            </h2>
+          </Reveal>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-4">
+            <Reveal delay={100}>
+              <p className="font-body text-base text-[oklch(0.75_0.010_75)] leading-relaxed mb-6">
+                Think about how many jobs food has quietly taken on in your life. It comforts you when you're stressed. It relaxes you at the end of a hard day. It eases boredom, soothes tiredness, rewards your effort, and consoles you when things go wrong.
+              </p>
+              <p className="font-body text-base text-[oklch(0.75_0.010_75)] leading-relaxed mb-6">
+                That's a lot of jobs for one thing to hold. No wonder the relationship feels complicated. No wonder you feel out of control around it. Food was never meant to carry all of that.
+              </p>
+              <p className="font-body text-base text-[oklch(0.75_0.010_75)] leading-relaxed">
+                The answer isn't more willpower or a stricter plan. It's learning to meet those real needs — rest, comfort, ease, joy — in ways that actually work. So that food can step back and do what it does best.
+              </p>
+            </Reveal>
+            <Reveal delay={200}>
+              <div className="border border-[oklch(0.97_0.005_75/0.10)] p-8 mb-8">
+                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">Food's current job description</p>
+                <div className="space-y-3">
+                  {[
+                    "Comforter after a hard day",
+                    "Relaxation tool when you can't switch off",
+                    "Boredom buster on a slow evening",
+                    "Energy substitute when you're running on empty",
+                    "Stress reliever when everything feels too much",
+                    "Reward for getting through the week",
+                    "Consolation when things don't go to plan",
+                  ].map((job, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <span className="text-[oklch(0.55_0.02_65)] text-sm mt-0.5">—</span>
+                      <p className="font-body text-sm text-[oklch(0.65_0.010_75)] leading-relaxed line-through decoration-[oklch(0.72_0.10_75)/60]">{job}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="border border-[oklch(0.72_0.10_75/0.40)] bg-[oklch(0.72_0.10_75/0.08)] p-8">
+                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">Food's new job description</p>
+                <div className="space-y-3">
+                  {[
+                    "Nourish your body with pleasure and ease",
+                    "Satisfy your genuine hunger — and delight in it",
+                    "Bring joy to the table, literally",
+                    "Connect you to the people you love",
+                  ].map((job, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <span className="text-[oklch(0.72_0.10_75)] text-sm mt-0.5">✓</span>
+                      <p className="font-body text-sm text-white leading-relaxed">{job}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <Rule />
+
       {/* ── DEEPER TRUTH ── */}
       <section className="py-24 md:py-32">
         <div className="container">
