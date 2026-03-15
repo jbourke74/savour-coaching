@@ -701,9 +701,6 @@ export default function Home() {
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
                 I said yes to everything that followed — building a catering and private chef business, travelling, cooking at coaching retreats run by friends I'd met at coach training. It was at those retreats, in the conversations that happened around the table, that the seeds of Savour were planted.
               </p>
-              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                I also bought a house on my own, moving in the day I turned 40 — during lockdown. I tell you that not to boast, but because it's the kind of decision that only makes sense if you've learned to trust yourself. That's what I want to help you do.
-              </p>
               <p className="font-body text-base text-[oklch(0.32_0.06_135)] leading-relaxed font-medium mb-10">
                 Savour grew out of real conversations with women at retreats — about food, about needs, about what they were really hungry for. I created it because those conversations deserved more than a weekend. They deserved a proper programme.
               </p>
