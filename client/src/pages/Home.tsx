@@ -258,7 +258,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={200}>
               <div className="border border-[oklch(0.97_0.005_75/0.10)] p-8 mb-8">
-                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">Food's current job description</p>
+                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">What hunger has been asking food to do</p>
                 <div className="space-y-3">
                   {[
                     "Comforter after a hard day",
@@ -373,10 +373,10 @@ export default function Home() {
           <Reveal>
             <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.32_0.06_135)] mb-4">A key part of the Savour Method</p>
             <h2 className="font-display text-5xl md:text-6xl text-[oklch(0.12_0.02_65)] leading-[1.05] mb-6 max-w-4xl">
-              Meet your <em className="text-[oklch(0.32_0.06_135)]">Food Avatar.</em>
+              Meet your <em className="text-[oklch(0.32_0.06_135)]">Hunger Avatar.</em>
             </h2>
             <p className="font-body text-lg text-[oklch(0.35_0.02_65)] leading-relaxed max-w-2xl mb-16">
-              One of the most powerful things we do together is give your food a name, a face, and a job description — then conduct an honest performance review. Because once you can see exactly what food is being asked to do, you can start to find better people for the job.
+              One of the most powerful things we do together is give your hunger a name, a face, and a voice — and then ask it the question it has never been asked: <em>what do you actually need?</em> Because your hunger is not the problem. It is a messenger. And once you understand what it is truly asking for, everything changes.
             </p>
           </Reveal>
 
@@ -386,7 +386,7 @@ export default function Home() {
               {
                 step: "01",
                 title: "Name & Profile",
-                desc: "We give your food avatar a name and a personality. Is it a frantic PA who never clocks off? A loyal but exhausted friend who's always on call? Naming it makes it real — and a little bit funny.",
+                desc: "We give your hunger a name and a personality. Is it a frantic PA who never clocks off? A small child who just needs a hug? A tired woman who hasn't slept properly in years? Naming it makes it real — and surprisingly tender.",
                 color: "bg-[oklch(0.32_0.06_135)]",
                 textColor: "text-white",
                 subColor: "text-[oklch(0.75_0.05_135)]",
@@ -394,7 +394,7 @@ export default function Home() {
               {
                 step: "02",
                 title: "The Performance Review",
-                desc: "We look at every job food is doing and rate how well it's actually performing. Spoiler: it's working incredibly hard and getting mediocre results. It's not food's fault — it was never trained for this.",
+                desc: "We listen to what your Hunger Avatar is really asking for. Not the surface request — the food — but the genuine need underneath. Comfort? Rest? Connection? Excitement? Safety? We rate how well food has been meeting that need. (Spoiler: it's been doing its best, but it was never trained for this.)",
                 color: "bg-[oklch(0.72_0.10_75)]",
                 textColor: "text-[oklch(0.12_0.02_65)]",
                 subColor: "text-[oklch(0.30_0.04_65)]",
@@ -532,7 +532,7 @@ export default function Home() {
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[oklch(0.97_0.005_75/0.15)]">
             {[
-              { week: "Month 1", title: "Foundation & Food Story", body: "We begin by exploring your unique relationship with food — your history, your habits, your patterns — with curiosity and compassion. We introduce the Food Avatar and conduct your first Performance Review." },
+              { week: "Month 1", title: "Foundation & Food Story", body: "We begin by exploring your unique relationship with food — your history, your habits, your patterns — with curiosity and compassion. We meet your Hunger Avatar for the first time and begin to listen to what it is really asking for." },
               { week: "Month 2 · Pillar 1", title: "Care", body: "What does it mean to truly care for yourself? We explore self-nourishment beyond food — how you rest, how you speak to yourself, and how you begin to meet your own needs with kindness." },
               { week: "Month 3 · Pillar 2", title: "Rest", body: "Rest is not laziness — it's a biological need. We look at sleep, recovery, and the art of doing less. We find better candidates for the jobs food has been doing in the name of tiredness and depletion." },
               { week: "Month 4 · Pillar 3", title: "Experiences", body: "Boredom and emptiness are often at the root of emotional eating. This month we design a life rich in experiences — things that excite, engage, and genuinely fill you up." },
@@ -770,7 +770,7 @@ export default function Home() {
                 <p className="font-body text-xs text-[oklch(0.72_0.10_75)] tracking-widest uppercase">The Savour Promise</p>
                 <div className="mt-8 pt-8 border-t border-[oklch(0.97_0.005_75/0.15)]">
                   <p className="font-body text-xs text-[oklch(0.65_0.010_75)] mb-2 uppercase tracking-widest">What's included</p>
-                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Food Avatar & Performance Review", "WhatsApp Support Between Sessions", "Your Savour Map"].map((item, i) => (
+                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Hunger Avatar & Performance Review", "WhatsApp Support Between Sessions", "Your Savour Map"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 py-2 border-b border-[oklch(0.97_0.005_75/0.08)] last:border-0">
                       <span className="text-[oklch(0.72_0.10_75)] text-xs">✓</span>
                       <span className="font-body text-sm text-[oklch(0.85_0.010_75)]">{item}</span>
