@@ -164,8 +164,11 @@ export default function Home() {
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
                 You're not alone. And this isn't a failure of willpower. It's a sign of a deeper hunger — a hunger for rest, for ease, for a life that truly nourishes you.
               </p>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
+                Here's what nobody says out loud: food has quietly taken on a second job. A third job. A whole portfolio of jobs it was never hired to do. And no matter how hard it works, it can't quite deliver.
+              </p>
               <p className="font-body text-base text-[oklch(0.32_0.06_135)] leading-relaxed font-medium">
-                What if the answer isn't in controlling your food, but in nourishing your life?
+                What if the answer isn't in controlling your food — but in finally giving it a new job description?
               </p>
             </Reveal>
             <Reveal className="lg:col-span-5" delay={150}>
@@ -532,7 +535,7 @@ export default function Home() {
               { week: "Week 1", title: "Your Food Story", body: "We explore your unique eating personality, habits, and history with curiosity — not criticism. This is where your transformation begins." },
               { week: "Week 2", title: "Hunger & Fullness", body: "You'll learn to recognise and trust the signals your body sends — understanding the difference between physical hunger and emotional hunger." },
               { week: "Week 3", title: "Satisfaction & Permission", body: "We explore what true nourishment feels like, and begin to dismantle the rules that have kept you at war with food." },
-              { week: "Week 4", title: "What Are You Really Hungry For?", body: "The heart of the work. We identify the deeper needs that food has been standing in for, and find more nourishing ways to meet them." },
+              { week: "Week 4", title: "The Performance Review", body: "The heart of the work. We look at every job food has been doing in your life, rate how well it's performing, and begin the handover — finding better candidates for each role." },
               { week: "Weeks 5–6", title: "Your Nourishment Map", body: "We co-create your personalised Savour System — a set of tools and practices built around the five Savour Pillars." },
               { week: "For Life", title: "The Savour Pillars", body: "Care · Rest · Experiences · Pleasure · Peace. A compass for a life that truly nourishes you, to return to again and again." },
             ].map((item, i) => (
@@ -649,7 +652,7 @@ export default function Home() {
                   {[
                     "You're tired of the constant mental battle with food and ready for a more compassionate approach.",
                     "You want more energy, more confidence in your body, and to finally let go of the guilt that follows you around.",
-                    "You know you're using food to cope with stress, boredom, or exhaustion — and you're ready to find a more nourishing way.",
+                    "You can see that food has been working overtime in your life — doing jobs it was never meant to do — and you're ready to give it a new, simpler role.",
                     "You're ready to invest time and energy to create a truly healthy and sustainable relationship with food, for life.",
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3 items-start">
@@ -706,7 +709,7 @@ export default function Home() {
                   },
                   {
                     q: "I've tried everything. How do I know this will be any different?",
-                    a: "I hear you. It's exhausting to feel like you've tried it all and nothing has worked. The Savour Method is different because it's not a one-size-fits-all approach. It's a personalised, high-touch coaching experience where we get to the root of your unique challenges with food — not just the symptoms.",
+                    a: "I hear you. It's exhausting to feel like you've tried it all and nothing has worked. Here's why most approaches fail: they try to make food redundant without hiring a replacement. They remove the comfort, the reward, the stress relief — but leave the underlying need completely unmet. The Savour Method is different because we work on the handover plan, not just the resignation letter.",
                   },
                   {
                     q: "Is this a diet programme?",
@@ -746,8 +749,11 @@ export default function Home() {
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
                 The Savour Method is a 6-week, high-touch 1:1 coaching experience. This investment includes our weekly private sessions, your personalised Savour System, and dedicated support between our calls.
               </p>
-              <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-10 max-w-lg">
+              <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
                 It is an investment in your well-being, your peace of mind, and the joyful, energised life that is waiting for you. Payment plans are available.
+              </p>
+              <p className="font-body text-base text-[oklch(0.72_0.10_75)] leading-relaxed mb-10 max-w-lg italic font-display text-lg">
+                Food doesn't get fired. It gets reassigned — back to the job it was always meant to do.
               </p>
               <a
                 href="https://tidycal.com/jbourke74/30-minute-discovery-call" target="_blank" rel="noopener noreferrer"
