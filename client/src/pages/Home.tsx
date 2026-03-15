@@ -608,10 +608,10 @@ export default function Home() {
           <Reveal>
             <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">The Savour Method</p>
             <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.97_0.005_75)] mb-4 max-w-2xl leading-[1.15]">
-              A 6-month 1:1 coaching partnership designed to guide you home to yourself.
+              A 6-month 1:1 coaching partnership built around one question: what are you really hungry for?
             </h2>
             <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed max-w-xl mb-16">
-              Eight sessions. Six months. Five pillars. One life that truly nourishes you. This isn't another diet — it's a journey back to yourself, structured around the things that actually fill you up.
+              Eight sessions. Five pillars. A practical, personal map for a life that genuinely fills you up.
             </p>
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[oklch(0.97_0.005_75/0.15)]">
@@ -831,10 +831,10 @@ export default function Home() {
                 Ready to savour<br /><em>your life?</em>
               </h2>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
-                The Savour Method is a 6-month, high-touch 1:1 coaching experience. Eight private sessions, structured around the five Savour Pillars, with worksheets to deepen the work between calls and WhatsApp support so you're never navigating the journey alone.
+                The Savour Method is a 6-month, 1:1 coaching programme. Eight private sessions, structured around the five Savour Pillars, with worksheets between calls and WhatsApp support for the moments when something comes up and you don't want to wait until the next session.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
-                It is an investment in your well-being, your peace of mind, and the joyful, energised life that is waiting for you. Payment plans are available.
+                We start with a free 30-minute conversation to make sure it's the right fit. No pressure, no pitch — just a chance to talk about where you are and what you're looking for. Payment plans are available.
               </p>
               <p className="font-body text-base text-[oklch(0.72_0.10_75)] leading-relaxed mb-10 max-w-lg italic font-display text-lg">
                 Food doesn't get fired. It gets reassigned — back to the job it was always meant to do.
