@@ -373,10 +373,10 @@ export default function Home() {
           <Reveal>
             <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.32_0.06_135)] mb-4">A key part of the Savour Method</p>
             <h2 className="font-display text-5xl md:text-6xl text-[oklch(0.12_0.02_65)] leading-[1.05] mb-6 max-w-4xl">
-              Meet your <em className="text-[oklch(0.32_0.06_135)]">Hunger Avatar.</em>
+              Meet your <em className="text-[oklch(0.32_0.06_135)]">Hunger Voice.</em>
             </h2>
             <p className="font-body text-lg text-[oklch(0.35_0.02_65)] leading-relaxed max-w-2xl mb-16">
-              One of the most powerful things we do together is give your hunger a name, a face, and a voice — and then ask it the question it has never been asked: <em>what do you actually need?</em> Because your hunger is not the problem. It is a messenger. And once you understand what it is truly asking for, everything changes.
+              One of the most powerful things we do together is give your hunger a name and a voice — and then ask it the question it has never been asked: <em>what do you actually need?</em> Because your hunger is not the problem. It is a messenger. And once you understand what it is truly asking for, everything changes.
             </p>
           </Reveal>
 
@@ -394,7 +394,7 @@ export default function Home() {
               {
                 step: "02",
                 title: "The Performance Review",
-                desc: "We listen to what your Hunger Avatar is really asking for. Not the surface request — the food — but the genuine need underneath. Comfort? Rest? Connection? Excitement? Safety? We rate how well food has been meeting that need. (Spoiler: it's been doing its best, but it was never trained for this.)",
+                desc: "We listen to what your Hunger Voice is really asking for. Not the surface request — the food — but the genuine need underneath. Comfort? Rest? Connection? Excitement? Safety? We rate how well food has been meeting that need. (Spoiler: it's been doing its best, but it was never trained for this.)",
                 color: "bg-[oklch(0.72_0.10_75)]",
                 textColor: "text-[oklch(0.12_0.02_65)]",
                 subColor: "text-[oklch(0.30_0.04_65)]",
@@ -419,6 +419,90 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+
+          {/* ── TYPES OF HUNGER ── */}
+          <Reveal>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.32_0.06_135)] mb-6 mt-4">Your Hunger Voice speaks in many dialects</p>
+            <h3 className="font-display text-3xl md:text-4xl text-[oklch(0.12_0.02_65)] leading-[1.15] mb-4 max-w-2xl">Not all hunger is the same. <em>Learning to tell them apart changes everything.</em></h3>
+            <p className="font-body text-base text-[oklch(0.45_0.02_65)] leading-relaxed max-w-2xl mb-10">Your Hunger Voice can speak in many ways. Part of the Savour work is learning to recognise which voice is speaking — and what it genuinely needs.</p>
+          </Reveal>
+          <Reveal delay={80}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[oklch(0.85_0.010_75)] mb-16">
+              {[
+                {
+                  type: "Physical Hunger",
+                  signal: "A gradual, building sensation in your body — stomach growling, low energy, difficulty concentrating.",
+                  need: "Food. Nourishing, satisfying food — eaten with pleasure and without guilt.",
+                  color: "bg-[oklch(0.32_0.06_135)]",
+                  textColor: "text-white",
+                  subColor: "text-[oklch(0.75_0.05_135)]",
+                  icon: "◎",
+                },
+                {
+                  type: "Emotional Hunger",
+                  signal: "Sudden, urgent, and specific — often triggered by a feeling: stress, loneliness, sadness, overwhelm.",
+                  need: "Comfort, connection, safety, or rest. A conversation, a hug, a cry, a moment of stillness.",
+                  color: "bg-white",
+                  textColor: "text-[oklch(0.18_0.01_65)]",
+                  subColor: "text-[oklch(0.45_0.02_65)]",
+                  icon: "◈",
+                },
+                {
+                  type: "Sensory Hunger",
+                  signal: "Triggered by sight, smell, or memory — the smell of bread, a beautiful table, a food memory.",
+                  need: "Pleasure, beauty, and sensory delight. Permission to enjoy without guilt.",
+                  color: "bg-[oklch(0.72_0.10_75)]",
+                  textColor: "text-[oklch(0.12_0.02_65)]",
+                  subColor: "text-[oklch(0.28_0.04_65)]",
+                  icon: "◇",
+                },
+                {
+                  type: "Boredom Hunger",
+                  signal: "A restless, empty feeling — reaching for food not because you're hungry, but because nothing else is happening.",
+                  need: "Stimulation, engagement, excitement, purpose. Something that genuinely interests you.",
+                  color: "bg-[oklch(0.15_0.03_65)]",
+                  textColor: "text-white",
+                  subColor: "text-[oklch(0.65_0.010_75)]",
+                  icon: "◻",
+                },
+                {
+                  type: "Stress Hunger",
+                  signal: "A tightness, urgency, or numbness — reaching for food to cope, escape, or soothe a nervous system in overdrive.",
+                  need: "Nervous system regulation — breathwork, movement, rest, safety, support.",
+                  color: "bg-[oklch(0.97_0.015_75)]",
+                  textColor: "text-[oklch(0.18_0.01_65)]",
+                  subColor: "text-[oklch(0.45_0.02_65)]",
+                  icon: "◬",
+                },
+                {
+                  type: "Thirst Hunger",
+                  signal: "Mild, unfocused, hard to name — often mistaken for hunger but actually dehydration or a need for a break.",
+                  need: "Water, a pause, a breath, a moment away from the screen or the task.",
+                  color: "bg-[oklch(0.32_0.06_135/0.08)]",
+                  textColor: "text-[oklch(0.18_0.01_65)]",
+                  subColor: "text-[oklch(0.45_0.02_65)]",
+                  icon: "○",
+                },
+              ].map(({ type, signal, need, color, textColor, subColor, icon }, i) => (
+                <Reveal key={i} delay={i * 60}>
+                  <div className={`${color} p-8 h-full`}>
+                    <div className="flex items-start gap-4 mb-5">
+                      <span className={`font-display text-3xl ${subColor} leading-none mt-1`}>{icon}</span>
+                      <h4 className={`font-display text-xl ${textColor} leading-tight`}>{type}</h4>
+                    </div>
+                    <div className="mb-4">
+                      <p className={`font-body text-xs tracking-widest uppercase ${subColor} mb-2`}>The signal</p>
+                      <p className={`font-body text-sm ${subColor} leading-relaxed`}>{signal}</p>
+                    </div>
+                    <div>
+                      <p className={`font-body text-xs tracking-widest uppercase ${subColor} mb-2`}>What it needs</p>
+                      <p className={`font-body text-sm ${textColor} leading-relaxed font-medium`}>{need}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </Reveal>
 
           {/* Performance review table */}
           <Reveal>
@@ -532,7 +616,7 @@ export default function Home() {
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[oklch(0.97_0.005_75/0.15)]">
             {[
-              { week: "Month 1", title: "Foundation & Food Story", body: "We begin by exploring your unique relationship with food — your history, your habits, your patterns — with curiosity and compassion. We meet your Hunger Avatar for the first time and begin to listen to what it is really asking for." },
+              { week: "Month 1", title: "Foundation & Food Story", body: "We begin by exploring your unique relationship with food — your history, your habits, your patterns — with curiosity and compassion. We meet your Hunger Voice for the first time and begin to listen to what it is really asking for." },
               { week: "Month 2 · Pillar 1", title: "Care", body: "What does it mean to truly care for yourself? We explore self-nourishment beyond food — how you rest, how you speak to yourself, and how you begin to meet your own needs with kindness." },
               { week: "Month 3 · Pillar 2", title: "Rest", body: "Rest is not laziness — it's a biological need. We look at sleep, recovery, and the art of doing less. We find better candidates for the jobs food has been doing in the name of tiredness and depletion." },
               { week: "Month 4 · Pillar 3", title: "Experiences", body: "Boredom and emptiness are often at the root of emotional eating. This month we design a life rich in experiences — things that excite, engage, and genuinely fill you up." },
@@ -770,7 +854,7 @@ export default function Home() {
                 <p className="font-body text-xs text-[oklch(0.72_0.10_75)] tracking-widest uppercase">The Savour Promise</p>
                 <div className="mt-8 pt-8 border-t border-[oklch(0.97_0.005_75/0.15)]">
                   <p className="font-body text-xs text-[oklch(0.65_0.010_75)] mb-2 uppercase tracking-widest">What's included</p>
-                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Hunger Avatar & Performance Review", "WhatsApp Support Between Sessions", "Your Savour Map"].map((item, i) => (
+                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Your Hunger Voice & Performance Review", "WhatsApp Support Between Sessions", "Your Savour Map"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 py-2 border-b border-[oklch(0.97_0.005_75/0.08)] last:border-0">
                       <span className="text-[oklch(0.72_0.10_75)] text-xs">✓</span>
                       <span className="font-body text-sm text-[oklch(0.85_0.010_75)]">{item}</span>
