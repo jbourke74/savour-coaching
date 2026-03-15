@@ -524,20 +524,20 @@ export default function Home() {
           <Reveal>
             <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">The Savour Method</p>
             <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.97_0.005_75)] mb-4 max-w-2xl leading-[1.15]">
-              A 1:1 coaching partnership designed to guide you home to yourself.
+              A 6-month 1:1 coaching partnership designed to guide you home to yourself.
             </h2>
             <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed max-w-xl mb-16">
-              This isn't another diet. It's a journey back to yourself — a chance to gather around the table of your own life and savour what you find there.
+              Two calls per month. Six months. Five pillars. One life that truly nourishes you. This isn't another diet — it's a journey back to yourself, structured around the things that actually fill you up.
             </p>
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[oklch(0.97_0.005_75/0.15)]">
             {[
-              { week: "Week 1", title: "Your Food Story", body: "We explore your unique eating personality, habits, and history with curiosity — not criticism. This is where your transformation begins." },
-              { week: "Week 2", title: "Hunger & Fullness", body: "You'll learn to recognise and trust the signals your body sends — understanding the difference between physical hunger and emotional hunger." },
-              { week: "Week 3", title: "Satisfaction & Permission", body: "We explore what true nourishment feels like, and begin to dismantle the rules that have kept you at war with food." },
-              { week: "Week 4", title: "The Performance Review", body: "The heart of the work. We look at every job food has been doing in your life, rate how well it's performing, and begin the handover — finding better candidates for each role." },
-              { week: "Weeks 5–6", title: "Your Nourishment Map", body: "We co-create your personalised Savour System — a set of tools and practices built around the five Savour Pillars." },
-              { week: "For Life", title: "The Savour Pillars", body: "Care · Rest · Experiences · Pleasure · Peace. A compass for a life that truly nourishes you, to return to again and again." },
+              { week: "Month 1", title: "Foundation & Food Story", body: "We begin by exploring your unique relationship with food — your history, your habits, your patterns — with curiosity and compassion. We introduce the Food Avatar and conduct your first Performance Review." },
+              { week: "Month 2 · Pillar 1", title: "Care", body: "What does it mean to truly care for yourself? We explore self-nourishment beyond food — how you rest, how you speak to yourself, and how you begin to meet your own needs with kindness." },
+              { week: "Month 3 · Pillar 2", title: "Rest", body: "Rest is not laziness — it's a biological need. We look at sleep, recovery, and the art of doing less. We find better candidates for the jobs food has been doing in the name of tiredness and depletion." },
+              { week: "Month 4 · Pillar 3", title: "Experiences", body: "Boredom and emptiness are often at the root of emotional eating. This month we design a life rich in experiences — things that excite, engage, and genuinely fill you up." },
+              { week: "Month 5 · Pillar 4", title: "Pleasure", body: "Pleasure is not a reward — it's a right. We reclaim joy, fun, and sensory delight in your life, so that food can return to being one source of pleasure among many." },
+              { week: "Month 6 · Pillar 5", title: "Peace", body: "We bring it all together. Your personalised Savour System — a Nourishment Map built around your five pillars — becomes your compass for life. Peace with food. Peace with yourself." },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 60} className="bg-[oklch(0.32_0.06_135)] p-8 border border-[oklch(0.97_0.005_75/0.10)]">
                 <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-3">{item.week}</p>
@@ -567,8 +567,8 @@ export default function Home() {
             <Reveal className="lg:col-span-7" delay={100}>
               <div>
                 <IncludedRow
-                  title="6 × Weekly 1:1 Coaching Sessions"
-                  description="Consistent, personalised guidance to help you understand your habits, overcome challenges, and stay on track with your goals."
+                  title="12 × 1:1 Coaching Sessions"
+                  description="Two calls per month over six months — consistent, personalised guidance to help you understand your habits, overcome challenges, and integrate lasting change at a pace that suits your life."
                 />
                 <IncludedRow
                   title="A Personalised Savour System"
@@ -716,8 +716,8 @@ export default function Home() {
                     a: "Not at all. Savour is the opposite of a diet. We work from the inside out — understanding your relationship with food, your emotional patterns, and your deeper needs. There are no rules, no meal plans, and no forbidden foods. Just curiosity, compassion, and lasting change.",
                   },
                   {
-                    q: "What happens after the 6 weeks?",
-                    a: "The tools and practices you build during Savour are yours for life. There is no falling off the wagon or getting off track — this is a set of practices you can slowly build, integrate, and return to again and again to guide you through life.",
+                    q: "What happens after the 6 months?",
+                    a: "The tools and practices you build during Savour are yours for life. By the end of the programme you'll have a personalised Nourishment Map — a set of practices built around your five Savour Pillars — that you can return to again and again. There is no falling off the wagon. This is a compass, not a plan.",
                   },
                 ].map((item, i) => (
                   <AccordionItem key={i} value={`item-${i}`} className="border-b border-[oklch(0.32_0.06_135/0.12)]">
@@ -747,7 +747,7 @@ export default function Home() {
                 Ready to savour<br /><em>your life?</em>
               </h2>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
-                The Savour Method is a 6-week, high-touch 1:1 coaching experience. This investment includes our weekly private sessions, your personalised Savour System, and dedicated support between our calls.
+                The Savour Method is a 6-month, high-touch 1:1 coaching experience. Two calls per month, twelve sessions in total, structured around the five Savour Pillars. This investment includes your private sessions, your personalised Nourishment Map, and dedicated support between our calls.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
                 It is an investment in your well-being, your peace of mind, and the joyful, energised life that is waiting for you. Payment plans are available.
@@ -770,7 +770,7 @@ export default function Home() {
                 <p className="font-body text-xs text-[oklch(0.72_0.10_75)] tracking-widest uppercase">The Savour Promise</p>
                 <div className="mt-8 pt-8 border-t border-[oklch(0.97_0.005_75/0.15)]">
                   <p className="font-body text-xs text-[oklch(0.65_0.010_75)] mb-2 uppercase tracking-widest">What's included</p>
-                  {["6 × Weekly 1:1 Sessions", "Personalised Savour System", "In-Depth Food Story Exploration", "Practical Tools & Resources", "Unlimited Between-Session Support"].map((item, i) => (
+                  {["12 × 1:1 Coaching Sessions", "2 Calls Per Month for 6 Months", "Personalised Nourishment Map", "Food Avatar & Performance Review", "Unlimited Between-Session Support"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 py-2 border-b border-[oklch(0.97_0.005_75/0.08)] last:border-0">
                       <span className="text-[oklch(0.72_0.10_75)] text-xs">✓</span>
                       <span className="font-body text-sm text-[oklch(0.85_0.010_75)]">{item}</span>
