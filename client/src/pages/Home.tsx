@@ -537,7 +537,7 @@ export default function Home() {
               { week: "Month 3 · Pillar 2", title: "Rest", body: "Rest is not laziness — it's a biological need. We look at sleep, recovery, and the art of doing less. We find better candidates for the jobs food has been doing in the name of tiredness and depletion." },
               { week: "Month 4 · Pillar 3", title: "Experiences", body: "Boredom and emptiness are often at the root of emotional eating. This month we design a life rich in experiences — things that excite, engage, and genuinely fill you up." },
               { week: "Month 5 · Pillar 4", title: "Pleasure", body: "Pleasure is not a reward — it's a right. We reclaim joy, fun, and sensory delight in your life, so that food can return to being one source of pleasure among many." },
-              { week: "Month 6 · Pillar 5", title: "Peace", body: "We bring it all together. Your personalised Savour System — a Nourishment Map built around your five pillars — becomes your compass for life. Peace with food. Peace with yourself." },
+              { week: "Month 6 · Pillar 5", title: "Peace", body: "We bring it all together. Your Savour Map — built around your five pillars — becomes your compass for life. Peace with food. Peace with yourself." },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 60} className="bg-[oklch(0.32_0.06_135)] p-8 border border-[oklch(0.97_0.005_75/0.10)]">
                 <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-3">{item.week}</p>
@@ -571,8 +571,8 @@ export default function Home() {
                   description="Eight private sessions spread across six months — consistent, personalised guidance to help you understand your habits, overcome challenges, and integrate lasting change at a pace that suits your real life."
                 />
                 <IncludedRow
-                  title="A Personalised Savour System"
-                  description="We'll co-create a unique nourishment map built around the Savour Pillars — Care, Rest, Experiences, Pleasure, Peace — that fits your real life."
+                  title="Your Savour Map"
+                  description="We'll co-create Your Savour Map — a bespoke, personal guide built around the five Savour Pillars (Care, Rest, Experiences, Pleasure, Peace) — that fits your real life and is yours to keep forever."
                 />
                 <IncludedRow
                   title="In-Depth Exploration of Your Food Story"
@@ -717,7 +717,7 @@ export default function Home() {
                   },
                   {
                     q: "What happens after the 6 months?",
-                    a: "The tools and practices you build during Savour are yours for life. By the end of the programme you'll have a personalised Nourishment Map — a set of practices built around your five Savour Pillars — that you can return to again and again. There is no falling off the wagon. This is a compass, not a plan.",
+                    a: "The tools and practices you build during Savour are yours for life. By the end of the programme you'll have Your Savour Map — a bespoke, personal guide built around your five Savour Pillars — that you can return to again and again. There is no falling off the wagon. This is a compass, not a plan.",
                   },
                 ].map((item, i) => (
                   <AccordionItem key={i} value={`item-${i}`} className="border-b border-[oklch(0.32_0.06_135/0.12)]">
@@ -770,7 +770,7 @@ export default function Home() {
                 <p className="font-body text-xs text-[oklch(0.72_0.10_75)] tracking-widest uppercase">The Savour Promise</p>
                 <div className="mt-8 pt-8 border-t border-[oklch(0.97_0.005_75/0.15)]">
                   <p className="font-body text-xs text-[oklch(0.65_0.010_75)] mb-2 uppercase tracking-widest">What's included</p>
-                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Food Avatar & Performance Review", "WhatsApp Support Between Sessions", "Personalised Nourishment Map"].map((item, i) => (
+                  {["8 × 1:1 Coaching Sessions", "6 Months of Guided Support", "Worksheets for Each Pillar", "Food Avatar & Performance Review", "WhatsApp Support Between Sessions", "Your Savour Map"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 py-2 border-b border-[oklch(0.97_0.005_75/0.08)] last:border-0">
                       <span className="text-[oklch(0.72_0.10_75)] text-xs">✓</span>
                       <span className="font-body text-sm text-[oklch(0.85_0.010_75)]">{item}</span>
