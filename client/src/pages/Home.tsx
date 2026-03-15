@@ -136,11 +136,11 @@ export default function Home() {
               1:1 Coaching with Joanna Bourke Lawlor
             </p>
             <h1 className="font-display text-5xl md:text-7xl text-white leading-[1.05] mb-6 animate-fade-up animate-fade-up-delay-1">
-              Let's discover<br />
-              <em>what you're really<br />hungry for.</em>
+              Let's create a nourished,<br />
+              <em>fulfilling life that feels<br />like a long Sunday lunch.</em>
             </h1>
             <p className="font-body text-base md:text-lg text-[oklch(0.90_0.010_75)] leading-relaxed max-w-lg mb-10 animate-fade-up animate-fade-up-delay-2">
-              A deeply personal coaching partnership for women who are ready to move from managing food to a nourishing, satisfying life that truly fills you up.
+              A deeply personal 1:1 coaching partnership for women who are ready to stop managing food — and start living a life that truly fills them up.
             </p>
             <div className="animate-fade-up animate-fade-up-delay-3">
               <CTAButton label="Book Your Free Consultation" />
