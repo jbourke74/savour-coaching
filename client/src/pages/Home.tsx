@@ -696,16 +696,16 @@ export default function Home() {
                 Hi, I'm Joanna.
               </h2>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                I've had a few lives. A career in tech that took me from Dublin to California. Then the kitchens of Ballymaloe Cookery School. And eventually, the work I was probably always heading towards — coaching.
+                Intuition has guided most of my big life decisions. After reading Martha Beck's <em>Finding Your Own North Star</em>, I followed my curiosity straight into her Life Coach Training programme. The following year, I left my job in tech, moved home to Ireland from the US, and spent three months in the kitchens of Ballymaloe Cookery School.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                For a long time, I knew exactly what it felt like to be at war with food. I'd be good for a while, then exhausted, then standing in front of the fridge at the end of a long day wondering what I was actually looking for. It wasn't until I started asking that question honestly that things began to shift.
+                I said yes to everything that followed — building a catering and private chef business, travelling, cooking at coaching retreats run by friends I'd met at coach training. It was at those retreats, in the conversations that happened around the table, that the seeds of Savour were planted.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                What I found — and what I've seen with every client since — is that the food was never really the problem. It was just the most available answer to questions that hadn't been asked yet.
+                I also bought a house on my own, moving in the day I turned 40 — during lockdown. I tell you that not to boast, but because it's the kind of decision that only makes sense if you've learned to trust yourself. That's what I want to help you do.
               </p>
               <p className="font-body text-base text-[oklch(0.32_0.06_135)] leading-relaxed font-medium mb-10">
-                I created Savour because I wanted to offer something I wish I'd had — not another set of rules, but a real conversation about what's actually going on.
+                Savour grew out of real conversations with women at retreats — about food, about needs, about what they were really hungry for. I created it because those conversations deserved more than a weekend. They deserved a proper programme.
               </p>
               <div className="flex flex-wrap gap-4 text-sm font-body">
                 <span className="px-4 py-2 border border-[oklch(0.32_0.06_135/0.25)] text-[oklch(0.32_0.06_135)]">Ballymaloe Trained</span>
