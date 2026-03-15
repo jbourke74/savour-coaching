@@ -294,6 +294,115 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FOOD AVATAR / PERFORMANCE REVIEW ── */}
+      <section className="py-24 md:py-32 bg-[oklch(0.97_0.015_75)]">
+        <div className="container">
+          <Reveal>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.32_0.06_135)] mb-4">A key part of the Savour Method</p>
+            <h2 className="font-display text-5xl md:text-6xl text-[oklch(0.12_0.02_65)] leading-[1.05] mb-6 max-w-4xl">
+              Meet your <em className="text-[oklch(0.32_0.06_135)]">Food Avatar.</em>
+            </h2>
+            <p className="font-body text-lg text-[oklch(0.35_0.02_65)] leading-relaxed max-w-2xl mb-16">
+              One of the most powerful things we do together is give your food a name, a face, and a job description — then conduct an honest performance review. Because once you can see exactly what food is being asked to do, you can start to find better people for the job.
+            </p>
+          </Reveal>
+
+          {/* Step cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mb-20">
+            {[
+              {
+                step: "01",
+                title: "Name & Profile",
+                desc: "We give your food avatar a name and a personality. Is it a frantic PA who never clocks off? A loyal but exhausted friend who's always on call? Naming it makes it real — and a little bit funny.",
+                color: "bg-[oklch(0.32_0.06_135)]",
+                textColor: "text-white",
+                subColor: "text-[oklch(0.75_0.05_135)]",
+              },
+              {
+                step: "02",
+                title: "The Performance Review",
+                desc: "We look at every job food is doing and rate how well it's actually performing. Spoiler: it's working incredibly hard and getting mediocre results. It's not food's fault — it was never trained for this.",
+                color: "bg-[oklch(0.72_0.10_75)]",
+                textColor: "text-[oklch(0.12_0.02_65)]",
+                subColor: "text-[oklch(0.30_0.04_65)]",
+              },
+              {
+                step: "03",
+                title: "The Handover Plan",
+                desc: "Together we find better candidates for each job. More sleep for tiredness. A walk or a call for stress. A hobby for boredom. A nap, a laugh, a friend — for all the things food was never really equipped to give you.",
+                color: "bg-[oklch(0.12_0.02_65)]",
+                textColor: "text-white",
+                subColor: "text-[oklch(0.65_0.010_75)]",
+              },
+            ].map(({ step, title, desc, color, textColor, subColor }, i) => (
+              <Reveal key={i} delay={i * 120} className="flex">
+                <div className={`${color} p-10 flex flex-col justify-between flex-1`}>
+                  <div>
+                    <p className={`font-display text-7xl font-bold ${subColor} mb-6 leading-none`}>{step}</p>
+                    <h3 className={`font-display text-2xl ${textColor} mb-4`}>{title}</h3>
+                    <p className={`font-body text-sm ${subColor} leading-relaxed`}>{desc}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* Performance review table */}
+          <Reveal>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.32_0.06_135)] mb-6">A sample performance review</p>
+          </Reveal>
+          <Reveal delay={80}>
+            <div className="overflow-hidden border border-[oklch(0.85_0.010_75)]">
+              {/* Header */}
+              <div className="grid grid-cols-12 bg-[oklch(0.12_0.02_65)] text-white">
+                <div className="col-span-4 py-4 px-6 font-body text-xs tracking-widest uppercase">Job title</div>
+                <div className="col-span-3 py-4 px-6 font-body text-xs tracking-widest uppercase border-l border-white/10">Performance rating</div>
+                <div className="col-span-5 py-4 px-6 font-body text-xs tracking-widest uppercase border-l border-white/10">Better candidate for the job</div>
+              </div>
+              {[
+                { job: "Stress reliever", rating: 2, ratingLabel: "Poor", better: "Nervous system regulation — breathwork, a walk, a bath, a rant to a friend" },
+                { job: "Comforter", rating: 3, ratingLabel: "Adequate", better: "Rest, connection, a hug, a good cry, a conversation that matters" },
+                { job: "Boredom buster", rating: 2, ratingLabel: "Poor", better: "Something that genuinely excites you — a creative project, movement, a podcast, a plan" },
+                { job: "Energy booster", rating: 2, ratingLabel: "Poor", better: "Sleep, rest, reducing your load, asking for help, saying no" },
+                { job: "Reward", rating: 3, ratingLabel: "Adequate", better: "Pleasure that truly replenishes — time, freedom, fun, beauty, celebration" },
+                { job: "Relaxation tool", rating: 2, ratingLabel: "Poor", better: "Transition rituals — a walk, music, changing clothes, a bath, screen-free time" },
+              ].map(({ job, rating, ratingLabel, better }, i) => (
+                <div key={i} className={`grid grid-cols-12 border-t border-[oklch(0.85_0.010_75)] ${
+                  i % 2 === 0 ? "bg-white" : "bg-[oklch(0.98_0.008_75)]"
+                }`}>
+                  <div className="col-span-4 py-5 px-6">
+                    <p className="font-body text-sm text-[oklch(0.18_0.01_65)] font-medium">{job}</p>
+                  </div>
+                  <div className="col-span-3 py-5 px-6 border-l border-[oklch(0.85_0.010_75)]">
+                    <div className="flex items-center gap-2 mb-1">
+                      {[1,2,3,4,5].map(star => (
+                        <span key={star} className={`text-base ${
+                          star <= rating ? "text-[oklch(0.72_0.10_75)]" : "text-[oklch(0.85_0.010_75)]"
+                        }`}>★</span>
+                      ))}
+                    </div>
+                    <p className="font-body text-xs text-[oklch(0.55_0.02_65)] uppercase tracking-wide">{ratingLabel}</p>
+                  </div>
+                  <div className="col-span-5 py-5 px-6 border-l border-[oklch(0.85_0.010_75)]">
+                    <p className="font-body text-sm text-[oklch(0.35_0.02_65)] leading-relaxed">{better}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          {/* Pull quote */}
+          <Reveal delay={100}>
+            <div className="mt-16 bg-[oklch(0.32_0.06_135)] p-10 md:p-14">
+              <p className="font-display text-3xl md:text-4xl italic text-white leading-[1.3] max-w-3xl mb-6">
+                "Food doesn't get fired. It gets reassigned. Back to the job it was always meant to do — nourish you, satisfy you, and bring you joy."
+              </p>
+              <p className="font-body text-xs text-[oklch(0.75_0.05_135)] tracking-widest uppercase">— The Savour Method</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <Rule />
 
       {/* ── DEEPER TRUTH ── */}
