@@ -691,21 +691,21 @@ export default function Home() {
               />
             </Reveal>
             <Reveal className="lg:col-span-8" delay={100}>
-              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">Meet your guide</p>
+              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">About Joanna</p>
               <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.18_0.01_65)] leading-[1.15] mb-8">
                 Hi, I'm Joanna.
               </h2>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                My own North Star has led me on a winding and wonderful path — from a career in tech that took me from Dublin to California, to the kitchens of Ballymaloe Cookery School, and finally, to the heart-centred work of coaching.
+                I've had a few lives. A career in tech that took me from Dublin to California. Then the kitchens of Ballymaloe Cookery School. And eventually, the work I was probably always heading towards — coaching.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                For years, I understood the feeling of being at war with food. I was stuck in a cycle of striving and restriction, only to find myself exhausted and reaching for a quick fix at the end of the day. It was through my own exploration of intuitive eating and compassionate self-care that I finally found peace.
+                For a long time, I knew exactly what it felt like to be at war with food. I'd be good for a while, then exhausted, then standing in front of the fridge at the end of a long day wondering what I was actually looking for. It wasn't until I started asking that question honestly that things began to shift.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                I discovered that the magic doesn't happen when we control our food, but when we gather around the table of our own lives with curiosity and love.
+                What I found — and what I've seen with every client since — is that the food was never really the problem. It was just the most available answer to questions that hadn't been asked yet.
               </p>
               <p className="font-body text-base text-[oklch(0.32_0.06_135)] leading-relaxed font-medium mb-10">
-                I created Savour to help you do the same. I'm not here to give you a new set of rules. I'm here to help you tune into your own wisdom.
+                I created Savour because I wanted to offer something I wish I'd had — not another set of rules, but a real conversation about what's actually going on.
               </p>
               <div className="flex flex-wrap gap-4 text-sm font-body">
                 <span className="px-4 py-2 border border-[oklch(0.32_0.06_135/0.25)] text-[oklch(0.32_0.06_135)]">Ballymaloe Trained</span>
