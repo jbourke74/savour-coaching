@@ -308,6 +308,41 @@ export default function Home() {
 
       <Rule />
 
+      {/* ── MY RELATIONSHIP WITH FOOD ── */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <Reveal>
+              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">About this work</p>
+              <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.18_0.01_65)] mb-10 leading-[1.15]">
+                My relationship with food
+              </h2>
+            </Reveal>
+            <Reveal delay={80}>
+              <div className="space-y-6 font-body text-lg text-[oklch(0.32_0.02_65)] leading-relaxed">
+                <p>
+                  I didn't come to this work from a difficult relationship with food. I came from the opposite direction.
+                </p>
+                <p>
+                  I grew up working in my family's fast food business — not exactly the origin story you'd expect from someone who went on to attend cookery school, work as a private chef, and spend ten years sharing food content online. But somewhere along the way, I fell deeply in love with food. With the ritual of cooking for people. With the long Sunday lunch that stretches into the evening. With the pleasure of a really good meal, eaten slowly, with people you love.
+                </p>
+                <p>
+                  For me, food has always been about connection, tradition, and joy. It's one of the great pleasures of my life — and I want that for the women I work with.
+                </p>
+                <p className="font-display text-2xl text-[oklch(0.32_0.06_135)] italic leading-snug">
+                  That's why Savour isn't about fixing your relationship with food. It's about freeing it.
+                </p>
+                <p>
+                  So that food can go back to being what it was always meant to be: a source of genuine pleasure, nourishment, and delight — not a source of stress, guilt, or noise.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <Rule />
+
       {/* ── IS THIS FOR YOU ── */}
       <section className="py-24 md:py-32 bg-[oklch(0.98_0.010_75)]">
         <div className="container">
