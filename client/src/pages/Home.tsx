@@ -825,13 +825,21 @@ export default function Home() {
                 We start with a free 30-minute discovery call to make sure it's the right fit. No pressure, no pitch — just a chance to talk about where you are and what you're looking for.
               </p>
 
-              {/* Pricing placeholder */}
-              <div className="bg-[oklch(0.97_0.005_75/0.06)] border border-[oklch(0.97_0.005_75/0.20)] p-8 mb-10 max-w-sm">
-                <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-3">Investment</p>
-                <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-2">
-                  Coming soon
-                </p>
-                <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">Payment plans available</p>
+              {/* Pricing */}
+              <div className="mb-10 max-w-lg">
+                {/* Single payment */}
+                <div className="bg-[oklch(0.97_0.005_75/0.08)] border border-[oklch(0.72_0.10_75/0.60)] p-8 mb-4 relative">
+                  <span className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] px-3 py-1">Best value</span>
+                  <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Single payment</p>
+                  <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€749</p>
+                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">Pay once, save €76</p>
+                </div>
+                {/* Payment plan */}
+                <div className="bg-[oklch(0.97_0.005_75/0.04)] border border-[oklch(0.97_0.005_75/0.18)] p-8">
+                  <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Monthly plan</p>
+                  <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€275<span className="font-body text-lg text-[oklch(0.70_0.010_75)] font-normal">/month</span></p>
+                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">3 monthly payments · €825 total</p>
+                </div>
               </div>
 
               <CTAButton
