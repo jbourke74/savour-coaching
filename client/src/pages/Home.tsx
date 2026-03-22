@@ -809,6 +809,69 @@ export default function Home() {
 
       <Rule />
 
+      {/* ── WAYS TO WORK TOGETHER ── */}
+      <section className="py-24 md:py-32 bg-[oklch(0.98_0.010_75)]">
+        <div className="container">
+          <Reveal className="max-w-3xl mb-6">
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">The Savour Method in 2026</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.18_0.01_65)] leading-[1.15] mb-6">
+              This isn't about managing food.<br /><em>It's about enjoying it.</em>
+            </h2>
+            <p className="font-body text-base text-[oklch(0.50_0.02_65)] leading-relaxed">
+              Wholly, fully, without the running commentary. The Savour Method is available in three ways this year — each one designed to bring you closer to a life that genuinely nourishes you, in the moment and every day.
+            </p>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[oklch(0.32_0.06_135/0.10)] mt-12">
+            {/* 1:1 Coaching */}
+            <Reveal delay={0} className="bg-[oklch(0.98_0.010_75)] p-10 flex flex-col">
+              <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">1:1 Coaching</p>
+              <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.18_0.01_65)] mb-4 leading-snug">
+                The Savour Method
+              </h3>
+              <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
+                Three months of private 1:1 coaching. Six Zoom sessions, WhatsApp support, and your personalised Savour Map. The deepest, most personal way to work together.
+              </p>
+              <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
+                <p className="font-body text-xs text-[oklch(0.55_0.02_65)] mb-1">From</p>
+                <p className="font-display text-3xl text-[oklch(0.32_0.06_135)]">€749</p>
+                <p className="font-body text-xs text-[oklch(0.60_0.02_65)] mt-1">or 3 × €275/month</p>
+              </div>
+            </Reveal>
+
+            {/* Retreats */}
+            <Reveal delay={80} className="bg-[oklch(0.32_0.06_135)] p-10 flex flex-col">
+              <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Retreat</p>
+              <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.97_0.005_75)] mb-4 leading-snug">
+                Write &amp; Savour
+              </h3>
+              <p className="font-body text-sm text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 flex-1">
+                A small-group retreat combining writing, conversation, and food — the real-life, in-the-moment experience of what it means to truly savour. Dates available in September 2026.
+              </p>
+              <div className="border-t border-[oklch(0.97_0.005_75/0.15)] pt-6">
+                <p className="font-body text-xs text-[oklch(0.72_0.10_75)] uppercase tracking-widest">Dates coming soon</p>
+              </div>
+            </Reveal>
+
+            {/* Workshops */}
+            <Reveal delay={160} className="bg-[oklch(0.98_0.010_75)] p-10 flex flex-col">
+              <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Workshops</p>
+              <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.18_0.01_65)] mb-4 leading-snug">
+                Savour Workshops
+              </h3>
+              <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
+                Online and in-person workshops across Ireland in 2026. A way to experience the Savour Method in a group setting — with food, conversation, and connection at the centre.
+              </p>
+              <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
+                <p className="font-body text-xs text-[oklch(0.55_0.02_65)] uppercase tracking-widest">Dates coming soon</p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <Rule />
+
       {/* ── INVESTMENT / CTA ── */}
       <section id="investment" className="py-24 md:py-32 bg-[oklch(0.32_0.06_135)]">
         <div className="container">
