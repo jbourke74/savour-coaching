@@ -711,10 +711,13 @@ export default function Home() {
             <Reveal className="lg:col-span-8" delay={100}>
               <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-6">About Joanna</p>
               <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.18_0.01_65)] leading-[1.15] mb-8">
-                Hi, I'm Joanna.
+                Hi, I'm Joanna!
               </h2>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                Intuition, or gut instinct, has guided most of my big life decisions. After reading Martha Beck's <em>Finding Your Own North Star</em>, I followed my curiosity straight into her Life Coach Training programme. The following year, I left my job in tech, moved home to Ireland from the US, and spent three months in the kitchens of Ballymaloe Cookery School.
+                Following my hunger for food and adventure has guided many of my big life choices. Growing up working in the family fast-food business, Some Like It Hot, I loved cooking, browsing menus, eating out and all things food related.
+              </p>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
+                After reading Martha Beck's <em>Finding Your Own North Star</em>, I followed my curiosity straight into her Life Coach Training programme. The following year, I left my job in tech, moved home to Ireland from the US, and spent three months in the kitchens of Ballymaloe Cookery School.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
                 I said yes to everything that followed — building a catering and private chef business, travelling, cooking at coaching retreats run by friends I'd met at coach training. It was at those retreats, in the conversations around the table, that the seeds of Savour were planted.
@@ -723,17 +726,30 @@ export default function Home() {
                 Savour grew out of real conversations with women at retreats — about food, about needs, about what they were really hungry for. I created Savour as a space to continue those conversations and support women in bringing their dreams to life.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
-                In 2026, I left my role in tech (again!) to follow my soul hunger — to create a programme that brings together my favourite things: food, adventure, hosting, and a life that feels like a long Sunday lunch with a full glass of your favourite drink in the sunshine. I live in Dublin with my husband. I was 42 and living with my cocker bichon, Marlo, when we met on Bumble and married two years later. My twenties and thirties were full of adventure — moving countries, changing careers, online dating — and my forties are settling into being my happiest years yet.
+                In 2026, I left my role in tech (again!) to follow my soul hunger — to create a programme that brings together my favourite things: food, adventure, hosting, and a life that feels like a long Sunday lunch with a full glass of your favourite drink. I live in Dublin with my husband. I was 42 and living with my cocker bichon, Marlo, when we met on Bumble and we married two years later. My twenties and thirties were full of adventure — moving countries, changing careers, online dating — and my forties are settling into being my happiest years yet.
               </p>
-              <div className="flex flex-wrap gap-3 text-xs font-body mb-8">
-                {[
-                  "Martha Beck Life Coach",
-                  "Intuitive Eating Counsellor",
-                  "Self-Belief Coach Academy",
-                  "Ballymaloe Trained",
-                ].map((tag, i) => (
-                  <span key={i} className="px-4 py-2 border border-[oklch(0.32_0.06_135/0.25)] text-[oklch(0.32_0.06_135)]">{tag}</span>
-                ))}
+
+              {/* Credentials list */}
+              <div className="mt-2 mb-8 border-t border-[oklch(0.32_0.06_135/0.12)] pt-8">
+                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-5">Certifications &amp; Experience</p>
+                <div className="space-y-2">
+                  {[
+                    { role: "Manager and Circle Facilitator at Meta", years: "2018 – 2026" },
+                    { role: "Self-Belief Coach Academy", years: "2024" },
+                    { role: "Intuitive Eating Counsellor", years: "2021" },
+                    { role: "Retreat and Private Catering", years: "2015 – 2018" },
+                    { role: "Calm Kitchen Cookery Class Host", years: "2017" },
+                    { role: "Ballymaloe Cookery School", years: "2014" },
+                    { role: "Martha Beck Life Coach Training", years: "2013" },
+                    { role: "Manager at Google Ireland and US", years: "2007 – 2014" },
+                    { role: "BBS in Business, MA in Globalisation — Dublin City University", years: "2006" },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-baseline justify-between gap-4 py-2 border-b border-[oklch(0.32_0.06_135/0.08)] last:border-0">
+                      <span className="font-body text-sm text-[oklch(0.32_0.02_65)] leading-relaxed">{item.role}</span>
+                      <span className="font-body text-xs text-[oklch(0.60_0.02_65)] shrink-0 tabular-nums">{item.years}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </Reveal>
           </div>
