@@ -262,7 +262,13 @@ export default function Home() {
             <Reveal className="lg:col-span-7">
               <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-8">What is Savour?</p>
               <p className="font-display text-3xl md:text-4xl text-[oklch(0.18_0.01_65)] leading-[1.3] mb-8">
-                There are kinds of hunger that food can't satisfy.
+                Our lives are driven by the things that we're hungry for.
+              </p>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
+                Growing up working in our family fast-food business in Dublin, going to cookery school, starting a food blog, catering for events and retreats, cooking and hosting at home — I've been driven by hunger for great food, fun and adventures. Usually trying to combine all three.
+              </p>
+              <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-4">
+                Life has also taught me that there are kinds of hunger that food can't satisfy.
               </p>
               <p className="font-body text-lg text-[oklch(0.40_0.02_65)] leading-relaxed mb-2">
                 The kind that asks for rest.
@@ -277,7 +283,7 @@ export default function Home() {
                 And sometimes, it's hunger for something bigger in your life — a new job, a challenge or adventure, a relationship, a family.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
-                <strong className="text-[oklch(0.18_0.01_65)]">Savour</strong> is a 1:1 coaching partnership for women who want to feel at ease with food, and create a whole life that truly nourishes them.
+                <strong className="text-[oklch(0.18_0.01_65)]">Savour</strong> is a 1:1 coaching partnership for women who want to feel at ease with food, and create a whole life that truly nourishes them — mind, body, heart and soul.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
                 Not through discipline or diets. And not by giving up on the part of you that wants to feel confident and energetic.
