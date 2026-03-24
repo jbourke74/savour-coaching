@@ -392,12 +392,7 @@ export default function Home() {
                   className="w-full object-cover"
                   style={{ aspectRatio: "4/3" }}
                 />
-                <div className="absolute -bottom-6 -left-6 bg-[oklch(0.72_0.10_75)] p-6 max-w-xs hidden md:block">
-                  <p className="font-display text-lg italic text-[oklch(0.18_0.01_65)] leading-snug">
-                    "I'd be shifting food from something that keeps me alive to something that fulfils and brings pleasure."
-                  </p>
-                  <p className="font-body text-xs text-[oklch(0.35_0.02_65)] mt-3 tracking-wide uppercase">— Survey Respondent</p>
-                </div>
+
               </div>
             </Reveal>
           </div>
