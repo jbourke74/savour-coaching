@@ -785,7 +785,7 @@ export default function Home() {
                 Savour grew out of real conversations with women at retreats — about food, about needs, about what they were really hungry for. I created Savour as a space to continue those conversations and support women in bringing their dreams to life.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
-                In 2026, I left my role in tech (again!) to follow my soul hunger — to create a programme that brings together my favourite things: food, adventure, hosting, and a life that feels like a long Sunday lunch with a full glass of your favourite drink. I live in Dublin with my husband. I was 42 and living with my cocker bichon, Marlo, when we met on Bumble and we married two years later. My twenties and thirties were full of adventure — moving countries, changing careers, online dating — and my forties are settling into being my happiest years yet.
+                In 2026, I'm following my soul hunger — to create a programme that brings together my favourite things: food, adventure, hosting, and a life that feels like a long Sunday lunch with a full glass of your favourite drink. I live in Dublin with my husband. I was 42 and living with my cocker bichon, Marlo, when we met on Bumble and we married two years later. My twenties and thirties were full of adventure — moving countries, changing careers, online dating — and my forties are settling into being my happiest years yet.
               </p>
 
               {/* Credentials list */}
