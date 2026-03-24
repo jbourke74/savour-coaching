@@ -16,9 +16,9 @@ import { trpc } from "@/lib/trpc";
 
 // ─── Image URLs ───────────────────────────────────────────────────────────────
 const IMG_HERO    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-joanna_564b02d6.webp";
-const IMG_ABOUT   = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/joanna-headshot_007324b7.png";
-const IMG_NOURISH = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-nourish-v2-UASTqgU9vMwAoZHr3v3eap.webp";
-const IMG_CTA     = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-cta-v2-KsnawgavbFe2oQ3W8Ht7eM.webp";
+const IMG_ABOUT   = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/joanna-headshot-real_d0d7d3dc.webp";
+const IMG_NOURISH = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-daytime-table_b1ef51ce.webp";
+const IMG_CTA     = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-dusk-gathering_a23b5407.webp";
 
 // ─── Scroll-reveal hook ───────────────────────────────────────────────────────
 function useReveal() {
@@ -947,7 +947,8 @@ export default function Home() {
                 A small-group retreat combining writing, conversation, and food — the real-life, in-the-moment experience of what it means to truly savour. Dates available in September 2026.
               </p>
               <div className="border-t border-[oklch(0.97_0.005_75/0.15)] pt-6">
-                <p className="font-body text-xs text-[oklch(0.72_0.10_75)] uppercase tracking-widest">Dates coming soon</p>
+                <p className="font-body text-xs text-[oklch(0.72_0.10_75)] uppercase tracking-widest mb-1">Dates coming soon</p>
+                <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Finca Buenvino, Andalucía</p>
               </div>
             </Reveal>
 
