@@ -907,7 +907,7 @@ export default function Home() {
                   The Savour Method
                 </h3>
                 <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
-                  Three months of private 1:1 coaching. Six Zoom sessions, WhatsApp support, and your personalised Savour Map. The deepest, most personal way to work together.
+                  Three months of private 1:1 coaching. The deepest, most personal way to work together.<br /><br />Six Zoom sessions, WhatsApp support, and your personalised Savour Map.
                 </p>
                 <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
                   <p className="font-body text-xs text-[oklch(0.55_0.02_65)] mb-1">From</p>
