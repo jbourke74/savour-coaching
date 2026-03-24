@@ -218,10 +218,9 @@ function HungerCard({
 }
 
 // ─── Main component ───────────────────────────────────────────────────────────
-// ─── Notify Me Section ───────────────────────────────────────────────────────
+// ─── Newsletter Section ───────────────────────────────────────────────────────
 function NotifyMeSection() {
   const [email, setEmail] = useState("");
-  const [interest, setInterest] = useState<"retreats" | "workshops" | "both">("both");
   const [submitted, setSubmitted] = useState(false);
 
   const subscribe = trpc.notify.subscribe.useMutation({
@@ -231,20 +230,20 @@ function NotifyMeSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    subscribe.mutate({ email, interest });
+    subscribe.mutate({ email, interest: "both" });
   };
 
   return (
-    <section className="py-20 md:py-28 bg-[oklch(0.98_0.010_75)]"> 
+    <section className="py-20 md:py-28 bg-[oklch(0.98_0.010_75)]">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <Reveal>
-            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">Retreats &amp; Workshops</p>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">Newsletter</p>
             <h2 className="font-display text-3xl md:text-4xl text-[oklch(0.18_0.01_65)] leading-[1.15] mb-4">
-              Be the first to know.
+              The Savour Series
             </h2>
             <p className="font-body text-base text-[oklch(0.50_0.02_65)] leading-relaxed mb-10 max-w-lg mx-auto">
-              Dates for the Write &amp; Savour Retreats and Savour Workshops are coming soon. Leave your email below and I'll be in touch as soon as they're announced.
+              Join the newsletter for conversations about food, life, and what it means to truly nourish yourself. Retreat and workshop dates, new programme announcements, and the occasional recipe.
             </p>
           </Reveal>
 
@@ -252,31 +251,12 @@ function NotifyMeSection() {
             <Reveal>
               <div className="bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] px-8 py-10 inline-block">
                 <p className="font-display text-2xl italic mb-2">You're on the list.</p>
-                <p className="font-body text-sm text-[oklch(0.80_0.010_75)]">I'll be in touch as soon as dates are confirmed.</p>
+                <p className="font-body text-sm text-[oklch(0.80_0.010_75)]">Welcome to The Savour Series. I'll be in touch soon.</p>
               </div>
             </Reveal>
           ) : (
             <Reveal delay={80}>
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">
-                {/* Interest selector */}
-                <div className="flex gap-0 border border-[oklch(0.32_0.06_135/0.20)] w-full max-w-md">
-                  {(["retreats", "both", "workshops"] as const).map((opt) => (
-                    <button
-                      key={opt}
-                      type="button"
-                      onClick={() => setInterest(opt)}
-                      className={`flex-1 font-body text-xs tracking-widest uppercase py-3 px-2 transition-colors ${
-                        interest === opt
-                          ? "bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)]"
-                          : "bg-transparent text-[oklch(0.50_0.02_65)] hover:bg-[oklch(0.32_0.06_135/0.06)]"
-                      }`}
-                    >
-                      {opt === "both" ? "Both" : opt === "retreats" ? "Retreats" : "Workshops"}
-                    </button>
-                  ))}
-                </div>
-
-                {/* Email + submit */}
                 <div className="flex gap-0 w-full max-w-md">
                   <input
                     type="email"
@@ -291,7 +271,7 @@ function NotifyMeSection() {
                     disabled={subscribe.isPending}
                     className="font-body text-xs tracking-widest uppercase px-6 py-4 bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] hover:bg-[oklch(0.26_0.06_135)] transition-colors disabled:opacity-60 shrink-0"
                   >
-                    {subscribe.isPending ? "Sending…" : "Notify me"}
+                    {subscribe.isPending ? "Sending…" : "Subscribe"}
                   </button>
                 </div>
 
