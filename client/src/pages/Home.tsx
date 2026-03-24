@@ -914,16 +914,25 @@ export default function Home() {
             </Reveal>
 
             {/* Workshops */}
-            <Reveal delay={160} className="bg-[oklch(0.98_0.010_75)] p-10 flex flex-col">
-              <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Workshops</p>
-              <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.18_0.01_65)] mb-4 leading-snug">
-                Savour Workshops
-              </h3>
-              <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
-                Online and in-person workshops across Ireland in 2026. A way to experience the Savour Method in a group setting — with food, conversation, and connection at the centre.
-              </p>
-              <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
-                <p className="font-body text-xs text-[oklch(0.55_0.02_65)] uppercase tracking-widest">Dates coming soon</p>
+            <Reveal delay={160} className="bg-[oklch(0.98_0.010_75)] flex flex-col overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-class_36b19f9b.webp"
+                  alt="Calm Kitchen cookery class, Dublin 2017"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10 flex flex-col flex-1">
+                <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Workshops</p>
+                <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.18_0.01_65)] mb-4 leading-snug">
+                  Savour Workshops
+                </h3>
+                <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
+                  Online and in-person workshops across Ireland in 2026. A way to experience the Savour Method in a group setting — with food, conversation, and connection at the centre.
+                </p>
+                <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
+                  <p className="font-body text-xs text-[oklch(0.55_0.02_65)] uppercase tracking-widest">Dates coming soon</p>
+                </div>
               </div>
             </Reveal>
           </div>
