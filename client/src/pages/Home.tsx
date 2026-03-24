@@ -883,18 +883,27 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[oklch(0.32_0.06_135/0.10)] mt-12">
             {/* 1:1 Coaching */}
-            <Reveal delay={0} className="bg-[oklch(0.98_0.010_75)] p-10 flex flex-col">
-              <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">1:1 Coaching</p>
-              <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.18_0.01_65)] mb-4 leading-snug">
-                The Savour Method
-              </h3>
-              <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
-                Three months of private 1:1 coaching. Six Zoom sessions, WhatsApp support, and your personalised Savour Map. The deepest, most personal way to work together.
-              </p>
-              <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
-                <p className="font-body text-xs text-[oklch(0.55_0.02_65)] mb-1">From</p>
-                <p className="font-display text-3xl text-[oklch(0.32_0.06_135)]">€749</p>
-                <p className="font-body text-xs text-[oklch(0.60_0.02_65)] mt-1">or 3 × €275/month</p>
+            <Reveal delay={0} className="bg-[oklch(0.98_0.010_75)] flex flex-col overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-churros-notebook_501142ab.webp"
+                  alt="Churros, hot chocolate and a notebook"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10 flex flex-col flex-1">
+                <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">1:1 Coaching</p>
+                <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.18_0.01_65)] mb-4 leading-snug">
+                  The Savour Method
+                </h3>
+                <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
+                  Three months of private 1:1 coaching. Six Zoom sessions, WhatsApp support, and your personalised Savour Map. The deepest, most personal way to work together.
+                </p>
+                <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
+                  <p className="font-body text-xs text-[oklch(0.55_0.02_65)] mb-1">From</p>
+                  <p className="font-display text-3xl text-[oklch(0.32_0.06_135)]">€749</p>
+                  <p className="font-body text-xs text-[oklch(0.60_0.02_65)] mt-1">or 3 × €275/month</p>
+                </div>
               </div>
             </Reveal>
 
