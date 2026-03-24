@@ -899,17 +899,34 @@ export default function Home() {
             </Reveal>
 
             {/* Retreats */}
-            <Reveal delay={80} className="bg-[oklch(0.32_0.06_135)] p-10 flex flex-col">
-              <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Retreat</p>
-              <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.97_0.005_75)] mb-4 leading-snug">
-                Write &amp; Savour
-              </h3>
-              <p className="font-body text-sm text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 flex-1">
-                A small-group retreat combining writing, conversation, and food — the real-life, in-the-moment experience of what it means to truly savour. Dates available in September 2026.
-              </p>
-              <div className="border-t border-[oklch(0.97_0.005_75/0.15)] pt-6">
-                <p className="font-body text-xs text-[oklch(0.72_0.10_75)] uppercase tracking-widest mb-1">Dates coming soon</p>
-                <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Finca Buenvino, Andalucía</p>
+            <Reveal delay={80} className="bg-[oklch(0.32_0.06_135)] flex flex-col overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-pool-view_5cb7eb11.webp"
+                  alt="Finca Buenvino pool and valley view, Andalucía"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-10 flex flex-col flex-1">
+                <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Retreat</p>
+                <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.97_0.005_75)] mb-4 leading-snug">
+                  Write &amp; Savour
+                </h3>
+                <p className="font-body text-sm text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 flex-1">
+                  A small-group retreat combining writing, conversation, and food — the real-life, in-the-moment experience of what it means to truly savour.
+                </p>
+                <div className="border-t border-[oklch(0.97_0.005_75/0.15)] pt-6 space-y-2">
+                  <p className="font-body text-xs text-[oklch(0.72_0.10_75)] uppercase tracking-widest">29 August – 5 September 2026</p>
+                  <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Finca Buenvino, Andalucía · 3 rooms available</p>
+                  <a
+                    href="https://write-it-down.co.uk/booking-form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 font-body text-xs tracking-[0.15em] uppercase border border-[oklch(0.97_0.005_75/0.5)] text-[oklch(0.97_0.005_75)] px-4 py-2 hover:bg-[oklch(0.97_0.005_75/0.1)] transition-colors"
+                  >
+                    Book your place
+                  </a>
+                </div>
               </div>
             </Reveal>
 
