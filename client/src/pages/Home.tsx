@@ -12,6 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { trpc } from "@/lib/trpc";
 
 // ─── Image URLs ───────────────────────────────────────────────────────────────
 const IMG_HERO    = "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-v2-aqQ6MX77sfUDg33gAX6jMa.webp";
@@ -217,6 +218,97 @@ function HungerCard({
 }
 
 // ─── Main component ───────────────────────────────────────────────────────────
+// ─── Notify Me Section ───────────────────────────────────────────────────────
+function NotifyMeSection() {
+  const [email, setEmail] = useState("");
+  const [interest, setInterest] = useState<"retreats" | "workshops" | "both">("both");
+  const [submitted, setSubmitted] = useState(false);
+
+  const subscribe = trpc.notify.subscribe.useMutation({
+    onSuccess: () => setSubmitted(true),
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    subscribe.mutate({ email, interest });
+  };
+
+  return (
+    <section className="py-20 md:py-28 bg-[oklch(0.98_0.010_75)]"> 
+      <div className="container">
+        <div className="max-w-2xl mx-auto text-center">
+          <Reveal>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">Retreats &amp; Workshops</p>
+            <h2 className="font-display text-3xl md:text-4xl text-[oklch(0.18_0.01_65)] leading-[1.15] mb-4">
+              Be the first to know.
+            </h2>
+            <p className="font-body text-base text-[oklch(0.50_0.02_65)] leading-relaxed mb-10 max-w-lg mx-auto">
+              Dates for the Write &amp; Savour Retreats and Savour Workshops are coming soon. Leave your email below and I'll be in touch as soon as they're announced.
+            </p>
+          </Reveal>
+
+          {submitted ? (
+            <Reveal>
+              <div className="bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] px-8 py-10 inline-block">
+                <p className="font-display text-2xl italic mb-2">You're on the list.</p>
+                <p className="font-body text-sm text-[oklch(0.80_0.010_75)]">I'll be in touch as soon as dates are confirmed.</p>
+              </div>
+            </Reveal>
+          ) : (
+            <Reveal delay={80}>
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">
+                {/* Interest selector */}
+                <div className="flex gap-0 border border-[oklch(0.32_0.06_135/0.20)] w-full max-w-md">
+                  {(["retreats", "both", "workshops"] as const).map((opt) => (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => setInterest(opt)}
+                      className={`flex-1 font-body text-xs tracking-widest uppercase py-3 px-2 transition-colors ${
+                        interest === opt
+                          ? "bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)]"
+                          : "bg-transparent text-[oklch(0.50_0.02_65)] hover:bg-[oklch(0.32_0.06_135/0.06)]"
+                      }`}
+                    >
+                      {opt === "both" ? "Both" : opt === "retreats" ? "Retreats" : "Workshops"}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Email + submit */}
+                <div className="flex gap-0 w-full max-w-md">
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your email address"
+                    className="flex-1 font-body text-sm px-5 py-4 bg-white border border-[oklch(0.32_0.06_135/0.20)] border-r-0 text-[oklch(0.18_0.01_65)] placeholder:text-[oklch(0.65_0.02_65)] focus:outline-none focus:border-[oklch(0.32_0.06_135/0.50)]"
+                  />
+                  <button
+                    type="submit"
+                    disabled={subscribe.isPending}
+                    className="font-body text-xs tracking-widest uppercase px-6 py-4 bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] hover:bg-[oklch(0.26_0.06_135)] transition-colors disabled:opacity-60 shrink-0"
+                  >
+                    {subscribe.isPending ? "Sending…" : "Notify me"}
+                  </button>
+                </div>
+
+                {subscribe.isError && (
+                  <p className="font-body text-xs text-red-600">
+                    {subscribe.error?.message || "Something went wrong. Please try again."}
+                  </p>
+                )}
+              </form>
+            </Reveal>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[oklch(0.96_0.015_75)] text-[oklch(0.18_0.01_65)]">
@@ -875,6 +967,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Rule />
+
+      {/* ── NOTIFY ME ── */}
+      <NotifyMeSection />
 
       <Rule />
 
