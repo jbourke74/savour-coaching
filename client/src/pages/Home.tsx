@@ -883,32 +883,36 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <Reveal className="lg:col-span-7">
-              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">Your investment</p>
+              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">Early access · Founding clients</p>
               <h2 className="font-display text-4xl md:text-6xl text-[oklch(0.97_0.005_75)] leading-[1.1] mb-6">
                 Ready to savour<br /><em>your life?</em>
               </h2>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
                 The Savour Method is a 3-month, 1:1 coaching programme. Six private Zoom sessions, WhatsApp support between calls, and your personalised Savour Map to keep.
               </p>
+              <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
+                I’m at the beginning of this journey, and I’d love to bring a small group of women with me. I’m offering early access to my first five founding clients at a special rate — as a genuine thank-you for being part of shaping Savour from the start. Once these five spaces are filled, the price moves to €1,200.
+              </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-10 max-w-lg">
-                We start with a free 30-minute discovery call to make sure it's the right fit. No pressure, no pitch — just a chance to talk about where you are and what you're looking for.
+                We start with a free 30-minute discovery call to make sure it’s the right fit. No pressure, no pitch — just a chance to talk about where you are and what you’re looking for.
               </p>
 
               {/* Pricing */}
               <div className="mb-10 max-w-lg">
                 {/* Single payment */}
                 <div className="bg-[oklch(0.97_0.005_75/0.08)] border border-[oklch(0.72_0.10_75/0.60)] p-8 mb-4 relative">
-                  <span className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] px-3 py-1">Best value</span>
+                  <span className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] px-3 py-1">Founding rate · 5 spaces</span>
                   <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Single payment</p>
                   <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€749</p>
-                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">Pay once, save €76</p>
+                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">Pay once · save €76 on the payment plan</p>
                 </div>
                 {/* Payment plan */}
-                <div className="bg-[oklch(0.97_0.005_75/0.04)] border border-[oklch(0.97_0.005_75/0.18)] p-8">
+                <div className="bg-[oklch(0.97_0.005_75/0.04)] border border-[oklch(0.97_0.005_75/0.18)] p-8 mb-6">
                   <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Monthly plan</p>
                   <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€275<span className="font-body text-lg text-[oklch(0.70_0.010_75)] font-normal">/month</span></p>
                   <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">3 monthly payments · €825 total</p>
                 </div>
+                <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Price increases to €1,200 after the first five founding clients.</p>
               </div>
 
               <CTAButton
