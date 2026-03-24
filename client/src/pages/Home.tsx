@@ -334,7 +334,7 @@ export default function Home() {
             <Reveal className="lg:col-span-7">
               <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-8">What is Savour?</p>
               <p className="font-display text-3xl md:text-4xl text-[oklch(0.18_0.01_65)] leading-[1.3] mb-8">
-                Our lives are driven by the things that we're hungry for.
+                Our lives are driven by what we're hungry for.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
                 Growing up working in our family fast-food business in Dublin, going to cookery school, writing a food blog, catering for events and retreats, cooking and hosting at home — I've been driven by hunger for great food, fun and adventures. Usually trying to combine all three.
