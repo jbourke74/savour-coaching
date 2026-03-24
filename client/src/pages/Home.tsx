@@ -430,10 +430,22 @@ export default function Home() {
                 "You find yourself at the fridge — not because you're physically hungry, but because you need relief or a moment to yourself.",
                 "You want to feel better in your body — more at ease, more energised, more like yourself — but you don't want to go back to rigid rules or start over again.",
                 "And underneath it all, there's a quiet sense that what you're really craving… might be more than food.",
-              ].map((item, i) => (
-                <div key={i} className="flex gap-5 items-start px-8 py-5 border-b border-[oklch(0.32_0.06_135/0.08)] last:border-0 bg-white hover:bg-[oklch(0.97_0.010_75)] transition-colors">
-                  <span className="mt-1 font-display text-lg text-[oklch(0.72_0.10_75)] shrink-0 italic">—</span>
-                  <p className="font-body text-base text-[oklch(0.32_0.02_65)] leading-relaxed">{item}</p>
+              ].map((item, i, arr) => (
+                <div key={i} className={`flex gap-5 items-start px-8 py-5 border-b border-[oklch(0.32_0.06_135/0.08)] last:border-0 transition-colors ${
+                  i === arr.length - 1
+                    ? "bg-[oklch(0.97_0.04_75)] hover:bg-[oklch(0.95_0.05_75)]"
+                    : "bg-white hover:bg-[oklch(0.97_0.010_75)]"
+                }`}>
+                  <span className={`shrink-0 italic ${
+                    i === arr.length - 1
+                      ? "mt-1 font-display text-xl text-[oklch(0.55_0.12_75)]"
+                      : "mt-1 font-display text-lg text-[oklch(0.72_0.10_75)]"
+                  }`}>—</span>
+                  <p className={`leading-relaxed ${
+                    i === arr.length - 1
+                      ? "font-display text-xl md:text-2xl text-[oklch(0.25_0.02_65)] italic"
+                      : "font-body text-base text-[oklch(0.32_0.02_65)]"
+                  }`}>{item}</p>
                 </div>
               ))}
             </div>
