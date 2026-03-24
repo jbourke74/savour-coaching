@@ -954,7 +954,7 @@ export default function Home() {
                   Savour Workshops
                 </h3>
                 <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-6 flex-1">
-                  Online and in-person workshops across Ireland in 2026. A way to experience the Savour Method in a group setting — with food, conversation, and connection at the centre.
+                  Let's get around a table! Online and in-person workshops across Ireland in 2026. A way to experience the Savour Method in a group setting — with food, conversation, and connection at the centre.
                 </p>
                 <div className="border-t border-[oklch(0.32_0.06_135/0.12)] pt-6">
                   <p className="font-body text-xs text-[oklch(0.55_0.02_65)] uppercase tracking-widest">Online and in-person dates in Ireland coming in 2026</p>
