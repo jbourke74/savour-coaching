@@ -936,7 +936,8 @@ export default function Home() {
                 </p>
                 <div className="border-t border-[oklch(0.97_0.005_75/0.15)] pt-6 space-y-2">
                   <p className="font-body text-xs text-[oklch(0.72_0.10_75)] uppercase tracking-widest">29 August – 5 September 2026</p>
-                  <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Finca Buenvino, Andalucía · 3 rooms available</p>
+                   <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Finca Buenvino, Andalucía</p>
+                   <p className="font-body text-xs text-[oklch(0.97_0.005_75)] tracking-widest uppercase font-semibold">Only 3 rooms available</p>
                   <a
                     href="https://write-it-down.co.uk/booking-form"
                     target="_blank"
