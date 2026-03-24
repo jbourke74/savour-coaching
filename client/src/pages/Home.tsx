@@ -536,7 +536,7 @@ export default function Home() {
                   intro={`The hunger for physical energy, restoration, and being properly fuelled. This is not just about eating "well" — but actually feeling nourished and supported in your body.`}
                   bullets={[
                     "Learning to recognise different types of physical hunger",
-                    "Eating what you love, in a way that leaves you feeling satisfied, not restricted or out of control",
+                    "Eating what you love and feeling satisfied — not out of control, or like you're off the wagon",
                     "Allowing yourself real rest — not just collapsing at the end of the day",
                   ]}
                 />
