@@ -380,6 +380,36 @@ export default function Home() {
       </section>
 
 
+      {/* ── PHOTO GALLERY STRIP ── */}
+      <section className="py-0 overflow-hidden">
+        <div
+          className="flex gap-3 overflow-x-auto scrollbar-hide"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          {[
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-joanna_564b02d6.webp", alt: "Evening dinner at Finca Buenvino" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-daytime-table_b1ef51ce.webp", alt: "Daytime table at Finca Buenvino" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-dusk-gathering_a23b5407.webp", alt: "Dusk gathering at Finca Buenvino" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-pool-view_5cb7eb11.webp", alt: "Pool and valley view at Finca Buenvino" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-class_36b19f9b.webp", alt: "Calm Kitchen class, Dublin 2017" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-welcome_97a28247.jpeg", alt: "Welcome to the Calm Kitchen" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-shelves_007abc31.jpg", alt: "Calm Kitchen shelves with herbs and jars" },
+          ].map((img, i) => (
+            <div
+              key={i}
+              className="shrink-0"
+              style={{ width: "clamp(260px, 28vw, 400px)", height: "clamp(320px, 35vw, 480px)" }}
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       <Rule />
 
       {/* ── IS THIS FOR YOU ── */}
