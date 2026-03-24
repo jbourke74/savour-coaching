@@ -919,7 +919,7 @@ export default function Home() {
               <div className="p-10 flex flex-col flex-1">
                 <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-4">Retreat</p>
                 <h3 className="font-display text-2xl md:text-3xl text-[oklch(0.97_0.005_75)] mb-4 leading-snug">
-                  Write &amp; Savour
+                  Write and Savour in Spain
                 </h3>
                 <p className="font-body text-sm text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 flex-1">
                   A small-group retreat combining writing, conversation, and food — the real-life, in-the-moment experience of what it means to truly savour.
