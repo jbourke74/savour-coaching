@@ -829,57 +829,6 @@ export default function Home() {
 
       <Rule />
 
-      {/* ── FAQ ── */}
-      <section className="py-24 md:py-32">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            <Reveal className="lg:col-span-4">
-              <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4">Questions</p>
-              <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.18_0.01_65)] leading-[1.15]">
-                Frequently asked questions.
-              </h2>
-            </Reveal>
-            <Reveal className="lg:col-span-8" delay={100}>
-              <Accordion type="single" collapsible className="w-full">
-                {[
-                  {
-                    q: "I feel like I have no willpower, especially in the evenings. Can this help?",
-                    a: "Absolutely. What you're experiencing is not a failure of willpower — it's a completely normal response to unmet needs and a lack of genuine nourishment. In Savour, we don't rely on willpower. Instead, we work on understanding what you're actually hungry for in those moments, and finding better ways to meet those needs.",
-                  },
-                  {
-                    q: "I'm so busy. I don't have time to add more to my plate. Will this work for me?",
-                    a: "Yes. Many of the women I work with are juggling demanding careers, families, and a million other things. Savour is not about adding more to your plate. It's about finding simple, sustainable ways to nourish yourself that fit into your real life.",
-                  },
-                  {
-                    q: "I've tried everything. How do I know this will be any different?",
-                    a: "I hear you. It's exhausting to feel like you've tried it all. Here's why most approaches don't stick: they try to change your eating without addressing what your eating is doing for you. They remove the comfort, the reward, the stress relief — but leave the underlying need completely unmet. Savour works on the handover plan, not just the resignation letter.",
-                  },
-                  {
-                    q: "Is this a diet programme?",
-                    a: "Not at all. Savour is the opposite of a diet. We work from the inside out — understanding your relationship with food, your emotional patterns, and your deeper needs. There are no rules, no meal plans, and no forbidden foods. Just curiosity, compassion, and lasting change.",
-                  },
-                  {
-                    q: "What happens after the 3 months?",
-                    a: "The tools and practices you build during Savour are yours for life. By the end of our work together you'll have your Savour Map — a personalised guide you can return to again and again. There is no falling off the wagon. This is a compass, not a plan.",
-                  },
-                ].map((item, i) => (
-                  <AccordionItem key={i} value={`item-${i}`} className="border-b border-[oklch(0.32_0.06_135/0.12)]">
-                    <AccordionTrigger className="font-body text-base text-[oklch(0.18_0.01_65)] text-left py-5 hover:no-underline hover:text-[oklch(0.32_0.06_135)]">
-                      {item.q}
-                    </AccordionTrigger>
-                    <AccordionContent className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed pb-5">
-                      {item.a}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      <Rule />
-
       {/* ── WAYS TO WORK TOGETHER ── */}
       <section className="py-24 md:py-32 bg-[oklch(0.98_0.010_75)]">
         <div className="container">
