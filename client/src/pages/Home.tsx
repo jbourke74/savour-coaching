@@ -1011,13 +1011,29 @@ export default function Home() {
                   <span className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] px-3 py-1">Founding rate · 5 spaces</span>
                   <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Single payment</p>
                   <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€749</p>
-                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">Pay once · save €76 on the payment plan</p>
+                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)] mb-4">Pay once · save €76 on the payment plan</p>
+                  <a
+                    href="https://buy.stripe.com/14A9ASfXL1M20Sf0mj2Ji00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block font-body text-xs tracking-widest uppercase px-6 py-3 bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] hover:bg-[oklch(0.80_0.10_75)] transition-colors duration-300"
+                  >
+                    Pay in Full — €749
+                  </a>
                 </div>
                 {/* Payment plan */}
                 <div className="bg-[oklch(0.97_0.005_75/0.04)] border border-[oklch(0.97_0.005_75/0.18)] p-8 mb-6">
                   <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Monthly plan</p>
                   <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€275<span className="font-body text-lg text-[oklch(0.70_0.010_75)] font-normal">/month</span></p>
-                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)]">3 monthly payments · €825 total</p>
+                  <p className="font-body text-sm text-[oklch(0.70_0.010_75)] mb-4">3 monthly payments · €825 total</p>
+                  <a
+                    href="https://buy.stripe.com/bJeaEW5j72Q6dF18SP2Ji01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block font-body text-xs tracking-widest uppercase px-6 py-3 border border-[oklch(0.97_0.005_75/0.40)] text-[oklch(0.85_0.010_75)] hover:border-[oklch(0.72_0.10_75)] hover:text-[oklch(0.97_0.005_75)] transition-colors duration-300"
+                  >
+                    Pay Monthly — €275/month
+                  </a>
                 </div>
                 <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Price increases to €1,200 after the first five founding clients.</p>
               </div>
