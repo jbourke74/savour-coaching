@@ -998,7 +998,7 @@ export default function Home() {
                 The Savour Method is a 3-month, 1:1 coaching programme. Six private Zoom sessions, WhatsApp support between calls, and your personalised Savour Map to keep.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
-                I’m at the beginning of this journey, and I’d love to bring a small group of women with me. I’m offering early access to my first five founding clients at a special rate — as a genuine thank-you for being part of shaping Savour from the start. Once these five spaces are filled, the price moves to €1,200.
+                I’m at the beginning of this journey, and I’d love to bring a small group of women with me. I’m offering early access to my first five founding clients at a special rate — as a thank-you for being part of shaping Savour from the start. Once these five spaces are filled, the price moves to €1,200.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-10 max-w-lg">
                 We'll start with a free 30-minute discovery call to make sure it's the right choice for you.
