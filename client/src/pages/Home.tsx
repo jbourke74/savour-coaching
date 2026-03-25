@@ -315,7 +315,7 @@ export default function Home() {
             </p>
             <h1 className="font-display text-5xl md:text-7xl text-white leading-[1.05] mb-6 animate-fade-up animate-fade-up-delay-1">
               What are you<br />
-              <em>really hungry for?</em>
+              <em>really</em> hungry for?
             </h1>
             <p className="font-body text-base md:text-lg text-[oklch(0.90_0.010_75)] leading-relaxed max-w-lg mb-10 animate-fade-up animate-fade-up-delay-2">
               A 1:1 coaching partnership for women who want to feel at ease with food — and create a whole life that truly nourishes them.
