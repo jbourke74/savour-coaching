@@ -340,7 +340,7 @@ export default function Home() {
                 Growing up working in our family fast-food business in Dublin, going to cookery school, writing a food blog, catering for events and retreats, cooking and hosting at home — I've long been driven by hunger for great food, fun and adventures. Usually trying to combine all three.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-4">
-                Life has also taught me that there are kinds of hunger that food can't satisfy.
+                There are also kinds of hunger that food can't satisfy.
               </p>
               <p className="font-body text-lg text-[oklch(0.40_0.02_65)] leading-relaxed mb-2">
                 The kind that asks for rest.
