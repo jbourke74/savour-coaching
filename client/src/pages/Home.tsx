@@ -985,6 +985,55 @@ export default function Home() {
 
       <Rule />
 
+      {/* ── KIND WORDS ── */}
+      <section className="py-24 md:py-32 bg-[oklch(0.98_0.010_75)]">
+        <div className="container">
+          <Reveal>
+            <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-4 text-center">Kind Words</p>
+            <h2 className="font-display text-4xl md:text-5xl text-[oklch(0.18_0.01_65)] leading-[1.1] mb-16 text-center">
+              What people say
+            </h2>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            {[
+              {
+                quote: "Joanna Bourke isn't just a chef, she is a magician who uses food to deeply nourish her clients. Joanna prepared my retreat menu with love and care and delivered masterpieces at each meal. Thank you Joanna for being so amazing.",
+                name: "Susan Hyatt",
+                role: "Life Coach & Entrepreneur",
+              },
+              {
+                quote: "Joanna Bourke is a powerful blend of talented chef, food artist, and warm-hearted therapist. If you ever have the opportunity to work with her, do it!",
+                name: "Peg Kusner",
+                role: "Peg Kusner Design",
+              },
+              {
+                quote: "Thanks so much Joanna for the amazing food, excellent service and impeccable taste at our Monalea Yoga & Wellbeing Retreat — it wouldn't have been the magical weekend that it was without you!",
+                name: "Gemma Deeney",
+                role: "The Yoga Gym",
+              },
+              {
+                quote: "Joanna catered my retreat in England for 16 women. She brought so much thought, attention and care to the whole experience — our Retreat participants fell in love with her JoFlow! Over the four days, Joanna played a vital role in ensuring everyone was nourished, cared for and able to enjoy food that loved them back. This meant they could relax into the deep and important work of the retreat. I can't recommend Jo enough.",
+                name: "Sas Petherick",
+                role: "Coach & Mentor",
+              },
+            ].map((t, i) => (
+              <Reveal key={i} delay={i * 80}>
+                <div className="bg-white border border-[oklch(0.90_0.010_75)] p-8 h-full flex flex-col">
+                  <span className="font-display text-5xl text-[oklch(0.72_0.10_75)] leading-none mb-4">&ldquo;</span>
+                  <p className="font-display text-lg italic text-[oklch(0.28_0.02_65)] leading-relaxed flex-1 mb-6">{t.quote}</p>
+                  <div className="border-t border-[oklch(0.90_0.010_75)] pt-4">
+                    <p className="font-body text-sm font-medium text-[oklch(0.32_0.06_135)]">{t.name}</p>
+                    <p className="font-body text-xs text-[oklch(0.55_0.02_65)] tracking-wide">{t.role}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Rule />
+
       {/* ── INVESTMENT / CTA ── */}
       <section id="investment" className="py-24 md:py-32 bg-[oklch(0.32_0.06_135)]">
         <div className="container">
