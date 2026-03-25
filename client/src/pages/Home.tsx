@@ -58,7 +58,7 @@ function Rule() {
   return <hr className="savour-rule my-0" />;
 }
 
-function CTAButton({ label = "Book Your Free Discovery Call", className = "" }: { label?: string; className?: string }) {
+function CTAButton({ label = "Book a Call", className = "" }: { label?: string; className?: string }) {
   return (
     <a
       href="https://tidycal.com/jbourke74/30-minute-discovery-call"
@@ -321,7 +321,7 @@ export default function Home() {
               A 1:1 coaching partnership for women who want to feel at ease with food — and create a whole life that truly nourishes them.
             </p>
             <div className="animate-fade-up animate-fade-up-delay-3">
-              <CTAButton label="Book Your Free Discovery Call" />
+              <CTAButton label="Book a Call" />
             </div>
           </div>
         </div>
@@ -1039,7 +1039,7 @@ export default function Home() {
               </div>
 
               <CTAButton
-                label="Book Your Free Discovery Call"
+                label="Book a Call"
                 className="bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] hover:bg-[oklch(0.80_0.10_75)]"
               />
             </Reveal>
