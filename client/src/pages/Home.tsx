@@ -1068,7 +1068,7 @@ export default function Home() {
                 The Savour Method is a 3-month, 1:1 coaching programme. Six private Zoom sessions, WhatsApp support between calls, and your personalised Savour Map to keep.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-6 max-w-lg">
-                I’m at the beginning of this journey, and I’d love to bring a small group of women with me. I’m offering early access to my first five founding clients at a special rate — as a thank-you for being part of shaping Savour from the start. Once these five spaces are filled, the price moves to €1,200.
+                I'm at the beginning of this journey, and I'd love to bring a small group of women with me. I'm offering early access to my first five founding clients at a special rate — as a thank-you for being part of shaping Savour from the start.
               </p>
               <p className="font-body text-base text-[oklch(0.80_0.010_75)] leading-relaxed mb-10 max-w-lg">
                 We'll start with a free 30-minute discovery call to make sure it's the right choice for you.
@@ -1078,7 +1078,7 @@ export default function Home() {
               <div className="mb-10 max-w-lg">
                 {/* Single payment */}
                 <div className="bg-[oklch(0.97_0.005_75/0.08)] border border-[oklch(0.72_0.10_75/0.60)] p-8 mb-4 relative">
-                  <span className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] px-3 py-1">Founding rate · 5 spaces</span>
+                  <span className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase bg-[oklch(0.72_0.10_75)] text-[oklch(0.18_0.01_65)] px-3 py-1">Founding rate · Limited spaces</span>
                   <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.72_0.10_75)] mb-2">Single payment</p>
                   <p className="font-display text-5xl text-[oklch(0.97_0.005_75)] mb-1">€749</p>
                   <p className="font-body text-sm text-[oklch(0.70_0.010_75)] mb-4">Pay once · save €76 on the payment plan</p>
