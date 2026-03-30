@@ -435,16 +435,16 @@ export default function Home() {
             <Reveal className="lg:col-span-5" delay={150}>
               <div className="flex flex-col gap-4">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-gathering_0ce31330.webp"
-                  alt="Women gathered around a long table sharing a meal"
-                  className="w-full object-cover"
-                  style={{ aspectRatio: "1/1" }}
-                />
-                <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-lunch-dublin_a62e2f96.jpg"
                   alt="Two women laughing over lunch in Dublin"
                   className="w-full object-cover"
                   style={{ aspectRatio: "4/3" }}
+                />
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-gathering_0ce31330.webp"
+                  alt="Women gathered around a long table sharing a meal"
+                  className="w-full object-cover"
+                  style={{ aspectRatio: "1/1" }}
                 />
               </div>
             </Reveal>
