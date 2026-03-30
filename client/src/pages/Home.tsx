@@ -218,13 +218,13 @@ function HungerCard({
 }
 
 // ─── Main component ───────────────────────────────────────────────────────────
-// ─── Newsletter Section ───────────────────────────────────────────────────────
-function NotifyMeSection() {
+// ─── Shared newsletter form ──────────────────────────────────────────────────
+function NewsletterForm({ onSuccess }: { onSuccess?: () => void }) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const subscribe = trpc.notify.subscribe.useMutation({
-    onSuccess: () => setSubmitted(true),
+    onSuccess: () => { setSubmitted(true); onSuccess?.(); },
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -233,6 +233,45 @@ function NotifyMeSection() {
     subscribe.mutate({ email, interest: "both" });
   };
 
+  if (submitted) {
+    return (
+      <div className="bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] px-8 py-10 inline-block">
+        <p className="font-display text-2xl italic mb-2">You’re on the list.</p>
+        <p className="font-body text-sm text-[oklch(0.80_0.010_75)]">Welcome to The Savour Series. I’ll be in touch soon.</p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">
+      <div className="flex gap-0 w-full max-w-md">
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Your email address"
+          className="flex-1 font-body text-sm px-5 py-4 bg-white border border-[oklch(0.32_0.06_135/0.20)] border-r-0 text-[oklch(0.18_0.01_65)] placeholder:text-[oklch(0.65_0.02_65)] focus:outline-none focus:border-[oklch(0.32_0.06_135/0.50)]"
+        />
+        <button
+          type="submit"
+          disabled={subscribe.isPending}
+          className="font-body text-xs tracking-widest uppercase px-6 py-4 bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] hover:bg-[oklch(0.26_0.06_135)] transition-colors disabled:opacity-60 shrink-0"
+        >
+          {subscribe.isPending ? "Sending…" : "Subscribe"}
+        </button>
+      </div>
+      {subscribe.isError && (
+        <p className="font-body text-xs text-red-600">
+          {subscribe.error?.message || "Something went wrong. Please try again."}
+        </p>
+      )}
+    </form>
+  );
+}
+
+// ─── Newsletter Section (static) ─────────────────────────────────────────────
+function NotifyMeSection() {
   return (
     <section className="py-20 md:py-28 bg-[oklch(0.98_0.010_75)]">
       <div className="container">
@@ -243,49 +282,78 @@ function NotifyMeSection() {
               The Savour Series
             </h2>
             <p className="font-body text-base text-[oklch(0.50_0.02_65)] leading-relaxed mb-10 max-w-lg mx-auto">
-              Join the newsletter for conversations about food, life, and what it means to truly nourish yourself. Retreat and workshop dates, new programme announcements, and the occasional recipe.
+              Conversations about food, life and behind the scenes of building a business. Retreat dates, workshop announcements, and the occasional recipe.
             </p>
           </Reveal>
-
-          {submitted ? (
-            <Reveal>
-              <div className="bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] px-8 py-10 inline-block">
-                <p className="font-display text-2xl italic mb-2">You're on the list.</p>
-                <p className="font-body text-sm text-[oklch(0.80_0.010_75)]">Welcome to The Savour Series. I'll be in touch soon.</p>
-              </div>
-            </Reveal>
-          ) : (
-            <Reveal delay={80}>
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">
-                <div className="flex gap-0 w-full max-w-md">
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your email address"
-                    className="flex-1 font-body text-sm px-5 py-4 bg-white border border-[oklch(0.32_0.06_135/0.20)] border-r-0 text-[oklch(0.18_0.01_65)] placeholder:text-[oklch(0.65_0.02_65)] focus:outline-none focus:border-[oklch(0.32_0.06_135/0.50)]"
-                  />
-                  <button
-                    type="submit"
-                    disabled={subscribe.isPending}
-                    className="font-body text-xs tracking-widest uppercase px-6 py-4 bg-[oklch(0.32_0.06_135)] text-[oklch(0.97_0.005_75)] hover:bg-[oklch(0.26_0.06_135)] transition-colors disabled:opacity-60 shrink-0"
-                  >
-                    {subscribe.isPending ? "Sending…" : "Subscribe"}
-                  </button>
-                </div>
-
-                {subscribe.isError && (
-                  <p className="font-body text-xs text-red-600">
-                    {subscribe.error?.message || "Something went wrong. Please try again."}
-                  </p>
-                )}
-              </form>
-            </Reveal>
-          )}
+          <Reveal delay={80}>
+            <NewsletterForm />
+          </Reveal>
         </div>
       </div>
     </section>
+  );
+}
+
+// ─── Newsletter Popup (45-second timer, suppressed if user scrolls) ──────────
+function NewsletterPopup() {
+  const [visible, setVisible] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
+  const hasScrolled = useRef(false);
+
+  useEffect(() => {
+    const onScroll = () => { hasScrolled.current = true; };
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    const timer = setTimeout(() => {
+      if (!hasScrolled.current && !dismissed) {
+        setVisible(true);
+      }
+    }, 45000);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      clearTimeout(timer);
+    };
+  }, [dismissed]);
+
+  if (!visible || dismissed) return null;
+
+  return (
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      style={{ backgroundColor: "oklch(0.12 0.01 65 / 0.55)" }}
+      onClick={() => { setVisible(false); setDismissed(true); }}
+    >
+      <div
+        className="relative bg-[oklch(0.97_0.008_75)] max-w-md w-full p-10 shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={() => { setVisible(false); setDismissed(true); }}
+          className="absolute top-4 right-4 font-body text-xs tracking-widest uppercase text-[oklch(0.50_0.02_65)] hover:text-[oklch(0.18_0.01_65)] transition-colors"
+          aria-label="Close"
+        >
+          ✕
+        </button>
+
+        <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-3">Newsletter</p>
+        <h2 className="font-display text-3xl text-[oklch(0.18_0.01_65)] leading-[1.15] mb-3">
+          The Savour Series
+        </h2>
+        <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-8">
+          Conversations about food, life and behind the scenes of building a business. Retreat dates, workshop announcements, and the occasional recipe.
+        </p>
+
+        <NewsletterForm onSuccess={() => setTimeout(() => { setVisible(false); setDismissed(true); }, 2500)} />
+
+        <button
+          onClick={() => { setVisible(false); setDismissed(true); }}
+          className="mt-6 font-body text-xs text-[oklch(0.65_0.02_65)] hover:text-[oklch(0.40_0.02_65)] transition-colors underline underline-offset-2"
+        >
+          No thanks
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -1085,6 +1153,9 @@ export default function Home() {
           </a>
         </div>
       </footer>
+
+      {/* ── NEWSLETTER POPUP ── */}
+      <NewsletterPopup />
 
     </div>
   );
