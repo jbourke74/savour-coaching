@@ -1065,7 +1065,10 @@ export default function Home() {
             </p>
             <div className="mt-8 flex items-center justify-center gap-3">
               <span className="block w-8 h-px bg-[oklch(0.72_0.10_75)]" />
-              <p className="font-body text-sm tracking-widest uppercase text-[oklch(0.72_0.10_75)]">The Irish Times</p>
+              <div>
+                <p className="font-body text-sm tracking-widest uppercase text-[oklch(0.72_0.10_75)]">Dominique McMullan, The Irish Times</p>
+                <p className="font-body text-xs tracking-widest uppercase text-[oklch(0.50_0.02_65)] mt-1">On The Calm Kitchen class</p>
+              </div>
               <span className="block w-8 h-px bg-[oklch(0.72_0.10_75)]" />
             </div>
           </Reveal>
