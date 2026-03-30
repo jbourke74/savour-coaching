@@ -461,7 +461,7 @@ export default function Home() {
         >
           {[
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-fruit-market_58fb1d96.webp", alt: "Vibrant fruit market stall" },
-            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-juice-table_3614e2cb.jpg", alt: "Fresh juice and flowers on a sunny table" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-workshop-table_06dc26d0.jpg", alt: "Workshop table with intuitive eating cards, peonies and drinks" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-dusk-gathering_a23b5407.webp", alt: "Dusk gathering at Finca Buenvino" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-pool-view_5cb7eb11.webp", alt: "Pool and valley view at Finca Buenvino" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-class_36b19f9b.webp", alt: "Calm Kitchen class, Dublin 2017" },
