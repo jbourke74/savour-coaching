@@ -524,8 +524,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <Reveal className="lg:col-span-5 order-2 lg:order-1" delay={100}>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/20230528_162114-01-01_c6d6e5e9.webp"
-                alt="Colourful feast spread on a table"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/IMG-20231025-WA0015_075429e3.jpg"
+                alt="Intuitive eating cards with coffee and flapjack on a sunny wooden bench"
                 className="w-full object-cover"
                 style={{ aspectRatio: "16/10" }}
               />
