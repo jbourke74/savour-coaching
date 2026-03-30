@@ -1055,6 +1055,25 @@ export default function Home() {
 
       <Rule />
 
+      {/* ── PRESS QUOTE ── */}
+      <section className="py-20 md:py-28 bg-[oklch(0.18_0.01_65)]">
+        <div className="container">
+          <Reveal className="max-w-4xl mx-auto text-center">
+            <p className="font-body text-xs tracking-[0.25em] uppercase text-[oklch(0.72_0.10_75)] mb-8">In the press</p>
+            <p className="font-display text-4xl md:text-5xl lg:text-6xl italic text-[oklch(0.97_0.005_75)] leading-[1.15]">
+              &ldquo;My soul and my body left well fed.&rdquo;
+            </p>
+            <div className="mt-8 flex items-center justify-center gap-3">
+              <span className="block w-8 h-px bg-[oklch(0.72_0.10_75)]" />
+              <p className="font-body text-sm tracking-widest uppercase text-[oklch(0.72_0.10_75)]">The Irish Times</p>
+              <span className="block w-8 h-px bg-[oklch(0.72_0.10_75)]" />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <Rule />
+
       {/* ── INVESTMENT / CTA ── */}
       <section id="investment" className="py-24 md:py-32 bg-[oklch(0.32_0.06_135)]">
         <div className="container">
