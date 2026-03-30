@@ -1106,7 +1106,6 @@ export default function Home() {
                     Pay Monthly — €275/month
                   </a>
                 </div>
-                <p className="font-body text-xs text-[oklch(0.65_0.010_75)] italic">Price increases to €1,200 after the first five founding clients.</p>
               </div>
 
               <CTAButton
