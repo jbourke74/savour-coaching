@@ -282,7 +282,7 @@ function NotifyMeSection() {
               The Savour Series
             </h2>
             <p className="font-body text-base text-[oklch(0.50_0.02_65)] leading-relaxed mb-10 max-w-lg mx-auto">
-              Conversations about food, life and behind the scenes of building a business. Retreat dates, workshop announcements, and the occasional recipe.
+              Chats and snippets about living a fully nourished life, The Savour Method workshops and retreats, and behind the scenes of creating a business.
             </p>
           </Reveal>
           <Reveal delay={80}>
@@ -341,7 +341,7 @@ function NewsletterPopup() {
           The Savour Series
         </h2>
         <p className="font-body text-sm text-[oklch(0.50_0.02_65)] leading-relaxed mb-8">
-          Conversations about food, life and behind the scenes of building a business. Retreat dates, workshop announcements, and the occasional recipe.
+          Chats and snippets about living a fully nourished life, The Savour Method workshops and retreats, and behind the scenes of creating a business.
         </p>
 
         <NewsletterForm onSuccess={() => setTimeout(() => { setVisible(false); setDismissed(true); }, 2500)} />
