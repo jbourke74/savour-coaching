@@ -460,7 +460,7 @@ export default function Home() {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {[
-            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-joanna_564b02d6.webp", alt: "Evening dinner at Finca Buenvino" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-fruit-market_58fb1d96.webp", alt: "Vibrant fruit market stall" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-juice-table_3614e2cb.jpg", alt: "Fresh juice and flowers on a sunny table" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-dusk-gathering_a23b5407.webp", alt: "Dusk gathering at Finca Buenvino" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-pool-view_5cb7eb11.webp", alt: "Pool and valley view at Finca Buenvino" },
