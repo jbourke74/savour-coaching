@@ -465,8 +465,7 @@ export default function Home() {
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-juice-table_3614e2cb.jpg", alt: "Fresh juice and flowers on a sunny table" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/joannabourke-3-2(1)_19e0931a.jpg", alt: "Outdoor feast table with salads, charcuterie and edible flowers" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-class_36b19f9b.webp", alt: "Calm Kitchen class, Dublin 2017" },
-            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-welcome_97a28247.jpeg", alt: "Welcome to the Calm Kitchen" },
-            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-shelves_007abc31.jpg", alt: "Calm Kitchen shelves with herbs and jars" },
+
           ].map((img, i) => (
             <div
               key={i}
