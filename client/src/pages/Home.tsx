@@ -460,8 +460,8 @@ export default function Home() {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {[
-            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-fruit-market_58fb1d96.webp", alt: "Vibrant fruit market stall" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-workshop-table_06dc26d0.jpg", alt: "Workshop table with intuitive eating cards, peonies and drinks" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-fruit-market_58fb1d96.webp", alt: "Vibrant fruit market stall" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-juice-table_3614e2cb.jpg", alt: "Fresh juice and flowers on a sunny table" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/joannabourke-3-2(1)_19e0931a.jpg", alt: "Outdoor feast table with salads, charcuterie and edible flowers" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-class_36b19f9b.webp", alt: "Calm Kitchen class, Dublin 2017" },
