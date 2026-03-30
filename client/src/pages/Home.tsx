@@ -441,8 +441,8 @@ export default function Home() {
                   style={{ aspectRatio: "1/1" }}
                 />
                 <img
-                  src={IMG_NOURISH}
-                  alt="A nourishing seasonal meal"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-lunch-dublin_a62e2f96.jpg"
+                  alt="Two women laughing over lunch in Dublin"
                   className="w-full object-cover"
                   style={{ aspectRatio: "4/3" }}
                 />
