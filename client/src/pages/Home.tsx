@@ -872,24 +872,20 @@ export default function Home() {
                 In 2026, I'm following my soul hunger — to create a programme that brings together my favourite things: food, adventure, hosting, and a life that feels like a long Sunday lunch with a full glass of your favourite drink. I live in Dublin with my husband. I was 42 and living with my cocker bichon, Marlo, when we met on Bumble and we married two years later. My twenties and thirties were full of adventure — moving countries, changing careers, online dating — and my forties are settling into being my happiest years yet.
               </p>
 
-              {/* Credentials list */}
+              {/* Credentials block */}
               <div className="mt-2 mb-8 border-t border-[oklch(0.32_0.06_135/0.12)] pt-8">
-                <p className="font-body text-xs tracking-[0.2em] uppercase text-[oklch(0.72_0.10_75)] mb-5">Certifications &amp; Experience</p>
-                <div className="space-y-2">
+                <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
+                  Savour is a blend of what works for me in creating a fulfilling and satisfying life — enjoying day to day pleasures and going after the adventures I'm hungry for.
+                </p>
+                <div className="space-y-4">
                   {[
-                    { role: "Manager and Circle Facilitator at Meta", years: "2018 – 2026" },
-                    { role: "Self-Belief Coach Academy", years: "2024" },
-                    { role: "Intuitive Eating Counsellor", years: "2021" },
-                    { role: "Retreat and Private Catering", years: "2015 – 2018" },
-                    { role: "Calm Kitchen Cookery Class Host", years: "2017" },
-                    { role: "Ballymaloe Cookery School", years: "2014" },
-                    { role: "Martha Beck Life Coach Training", years: "2013" },
-                    { role: "Manager at Google Ireland and US", years: "2007 – 2014" },
-                    { role: "BBS in Business, MA in Globalisation — Dublin City University", years: "2006" },
+                    "I have 3 coach training certifications (Martha Beck's Life Coach Training, Intuitive Eating Counsellor and Self-Belief Coaching Academy)",
+                    "I've spent 15 years in operations management roles at Google and Meta in Ireland and the US, leading teams and projects",
+                    "I took a career break from tech to spend 3 months on a farm at Ballymaloe Cookery School in Cork!",
                   ].map((item, i) => (
-                    <div key={i} className="flex items-baseline justify-between gap-4 py-2 border-b border-[oklch(0.32_0.06_135/0.08)] last:border-0">
-                      <span className="font-body text-sm text-[oklch(0.32_0.02_65)] leading-relaxed">{item.role}</span>
-                      <span className="font-body text-xs text-[oklch(0.60_0.02_65)] shrink-0 tabular-nums">{item.years}</span>
+                    <div key={i} className="flex items-start gap-4">
+                      <span className="mt-1 shrink-0 text-[oklch(0.72_0.10_75)] text-xs">—</span>
+                      <p className="font-body text-sm text-[oklch(0.32_0.02_65)] leading-relaxed">{item}</p>
                     </div>
                   ))}
                 </div>
