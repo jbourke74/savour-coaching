@@ -320,12 +320,12 @@ function NewsletterPopup() {
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 animate-backdrop-in"
       style={{ backgroundColor: "oklch(0.12 0.01 65 / 0.55)" }}
       onClick={() => { setVisible(false); setDismissed(true); }}
     >
       <div
-        className="relative bg-[oklch(0.97_0.008_75)] max-w-md w-full p-10 shadow-2xl"
+        className="relative bg-[oklch(0.97_0.008_75)] max-w-md w-full p-10 shadow-2xl animate-popup-enter"
         onClick={(e) => e.stopPropagation()}
       >
         <button
