@@ -461,7 +461,7 @@ export default function Home() {
         >
           {[
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-hero-joanna_564b02d6.webp", alt: "Evening dinner at Finca Buenvino" },
-            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-daytime-table_b1ef51ce.webp", alt: "Daytime table at Finca Buenvino" },
+            { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/savour-juice-table_3614e2cb.jpg", alt: "Fresh juice and flowers on a sunny table" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-dusk-gathering_a23b5407.webp", alt: "Dusk gathering at Finca Buenvino" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/finca-pool-view_5cb7eb11.webp", alt: "Pool and valley view at Finca Buenvino" },
             { src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663350001830/3Hve5y7seecPiQhWVm867k/calm-kitchen-class_36b19f9b.webp", alt: "Calm Kitchen class, Dublin 2017" },
