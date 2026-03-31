@@ -410,14 +410,8 @@ export default function Home() {
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-4">
                 There are also kinds of hunger that food can't satisfy.
               </p>
-              <p className="font-body text-lg text-[oklch(0.40_0.02_65)] leading-relaxed mb-2">
-                The kind that asks for rest.
-              </p>
-              <p className="font-body text-lg text-[oklch(0.40_0.02_65)] leading-relaxed mb-2">
-                For comfort.
-              </p>
               <p className="font-body text-lg text-[oklch(0.40_0.02_65)] leading-relaxed mb-6">
-                For reward.
+                The kind that asks for rest, comfort or reward.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
                 And sometimes, it's hunger for something bigger in your life — a new job, a challenge or adventure, a relationship, a family.
