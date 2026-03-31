@@ -541,7 +541,7 @@ export default function Home() {
                 This is why trying to be more disciplined, motivated, or "in control" rarely works for very long. And even when it does… it's not how you want to live.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-5">
-                Because when our deeper needs go unmet for long enough, food can become the quickest and most reliable way to soothe, distract, or fill the gap. It actually makes sense — because something in you is trying to help.
+                Because when our deeper needs go unmet for long enough, food can become the quickest and most reliable way to soothe, distract, or fill the gap.
               </p>
               <p className="font-body text-base text-[oklch(0.40_0.02_65)] leading-relaxed mb-8">
                 Food freedom doesn't come from being "good" with food. It comes from learning to understand and respond to your real hungers — with curiosity, compassion, and care. And from creating a life that nourishes you deeply, so that food no longer has to do that job alone.
